@@ -1,0 +1,15 @@
+# Core Streamlit dashboard
+streamlit
+pandas
+altair
+
+# Blockchain + trading tools
+web3
+requests
+
+# Utility and logging
+numpy
+schedule
+
+# File ops and system
+python-dotenv
