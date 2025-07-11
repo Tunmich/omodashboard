@@ -7,7 +7,9 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 import logging
-import re
+
+# 🔌 Load decision logic
+from strategy.decision_engine import should_buy
 
 # 🔌 Load modules from utils
 from utils.chain_volume import get_chain_volumes
@@ -15,10 +17,7 @@ from utils.gas_tracker import get_gas_price
 from utils.balance_checker import get_wallet_balance
 from utils.solana_balance import get_sol_balance
 from utils.trade_routing import select_optimal_chain
-
 # 🔌 Load decision logic
-from strategy.decision_engine import should_buy
-
 # 🔌 Load decision logic
 from strategy.decision_engine import should_buy
 st.set_page_config(page_title="OMO Dashboard", layout="wide")
