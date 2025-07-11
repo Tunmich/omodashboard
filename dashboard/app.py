@@ -1,6 +1,12 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# 🔧 Add both parent and strategy folder to sys.path
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+STRATEGY_DIR = os.path.join(BASE_DIR, 'strategy')
+
+sys.path.append(BASE_DIR)
+sys.path.append(STRATEGY_DIR)
 
 import json
 import pandas as pd
