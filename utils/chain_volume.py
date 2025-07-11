@@ -2,14 +2,14 @@ import logging
 
 # utils/chain_volume.py
 
-def get_chain_activity():
+def get_chain_volumes():
     """
-    Return fake normalized chain volume values for now.
-    Later use GeckoTerminal or DexScreener APIs.
+    Return placeholder dollar volumes for popular chains.
+    Later integrate with GeckoTerminal or DexScreener APIs.
     """
     return {
-        "Ethereum": 0.95,
-        "BNB": 0.75,
-        "Base": 0.60,
-        "Solana": 0.20  # placeholder
+        "Ethereum": 135_000_000,
+        "BNB": 92_000_000,
+        "Base": 67_000_000,
+        "Solana": 103_000_000
     }
