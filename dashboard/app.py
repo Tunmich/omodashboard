@@ -1,10 +1,7 @@
+import sys
+import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import json
-import sys
-import os
 
-import sys
-import os
 import json
 import pandas as pd
 import altair as alt
@@ -18,6 +15,9 @@ from utils.gas_tracker import get_gas_price
 from utils.balance_checker import get_wallet_balance
 from utils.solana_balance import get_sol_balance
 from utils.trade_routing import select_optimal_chain
+
+# 🔌 Load decision logic
+from strategy.decision_engine import should_buy
 
 # 🔌 Load decision logic
 from strategy.decision_engine import should_buy
