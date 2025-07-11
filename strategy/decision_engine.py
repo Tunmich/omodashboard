@@ -3,13 +3,6 @@
 import json
 import os
 
-def should_buy(token):
-    # Return True/False based on your buy logic
-    return (
-        token.get("buzz_score", 0) > 0.6 and
-        token.get("risk_score", 0) < 0.4 and
-        token.get("estimated_return", 0) > 1.2
-    )
 # Optional: load scoring weights from config file
 CONFIG_PATH = os.path.join("config", "decision_rules.json")
 
@@ -58,7 +51,7 @@ def should_buy(token):
             return False
         if social_score < cfg["social_score_min"]:
             return False
-        if cfg["allow_non_renounced"] is False and renounced is False:
+        if not cfg["allow_non_renounced"] and not renounced:
             return False
         if cfg["flag_rugged_tokens"] and is_flagged_rug:
             return False
