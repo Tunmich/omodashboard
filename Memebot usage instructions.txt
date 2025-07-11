@@ -1,0 +1,169 @@
+1. Environment Setup: .env Creation
+Create a .env file at the project root and inject your secrets:
+touch .env
+
+
+Then edit it:
+PRIVATE_KEY=your_private_key
+RPC_ETH=https://rpc.eth.gateway.io
+RPC_BNB=https://rpc.bnb.gateway.io
+RPC_BASE=https://rpc.base.gateway.io
+TELEGRAM_BOT_TOKEN=your_telegram_token
+TELEGRAM_CHAT_ID=your_chat_id
+
+
+And ensure .env is ignored:
+echo ".env" >> .gitignore
+
+
+
+📦 2. Install Python Dependencies
+If using requirements.txt:
+pip install -r requirements.txt
+
+
+Or install manually:
+pip install streamlit pandas altair python-dotenv web3 requests
+
+
+Plus any additional modules your scanners, predictors, or dashboard require.
+
+🧪 3. Generate Mock Tokens for Simulation
+Use your CLI tool to create realistic tokens:
+python tools/token_mock.py -n 20 -o simulated_tokens.json
+
+
+
+💸 4. Estimate Profit/Loss from Simulation
+Run your sandbox estimator:
+python tools/pl_simulator.py
+
+
+(This references the enriched mock data and writes to pl_simulated_results.json)
+
+📊 5. Launch the Analytics Dashboard
+Kick off your Streamlit dashboard with all ROI stats:
+streamlit run dashboard/app.py
+
+
+Your browser will open and show smart metrics, token audit logs, P/L charts, ROI leaderboard, and historical filters.
+
+🤖 6. Start the Bot Scheduler
+Execute the auto-trade bot:
+python scheduler/job_runner.py
+
+python tools/boot.py
+
+
+It will:
+- Scan tokens every 10 minutes
+- Decide if they’re worth buying (should_buy())
+- Log results to trades.csv
+- Send Telegram alerts
+- Simulate trades
+
+🛑 7. Stop the Bot Gracefully
+In your terminal, press:
+Ctrl + C
+
+
+This will terminate the loop safely.
+
+🔁 Optional: Backtest Past Decisions
+Run your strategy against historical snapshots:
+python strategy/backtest_engine.py
+
+
+
+📂 File Structure Reminder
+meme-token-radar/
+├── .env
+├── dashboard/
+│   └── app.py
+├── scheduler/
+│   └── job_runner.py
+├── strategy/
+│   ├── decision_engine.py
+│   ├── backtest_engine.py
+│   └── budget_manager.py
+├── tools/
+│   ├── token_mock_cli.py
+│   └── pl_simulator.py
+├── logs/
+│   ├── trades.csv
+│   └── historical_tokens.csv
+
+
+
+Let me know if you want to dockerize this, add a shortcut launcher (run.sh), or build a terminal menu UI. You’re not just writing code — you’re crafting a command center 🔧📡👨‍🚀
+
+Build Docker image
+docker build -t meme-sniper .
+
+
+🚀 Run container
+docker run -d --name sniperbot meme-sniper
+
+
+
+🧨 2. Add Launcher Script (run.sh)
+To simplify usage, we’ll add a shortcut shell script at the root:
+📦 run.sh
+#!/bin/bash
+
+echo "🚀 Launching Meme Token Radar..."
+
+# Activate Docker container
+docker start sniperbot 2>/dev/null || docker run -d --name sniperbot meme-sniper
+
+echo "✅ Bot is running in the background."
+
+
+🔧 Make it executable
+chmod +x run.sh
+
+
+Now just run:
+./run.sh
+
+
+
+
+tep 2: Launch Controller
+To activate this system:
+python alerts/telegram_controller.py
+
+
+Now, in Telegram:
+- Type /startbot → bot begins loop
+- Type /stopbot → bot halts
+- Type /status → check if it's running
+
+
+Make  RUN.SH it executable:
+chmod +x run.sh
+
+
+
+Run this in parallel FOR REORT LOOP
+python scheduler/report_loop.py
+
+
+GENERATE MOCK TOKENS
+
+python tools/token_mock_cli.py -n 30
+
+NEW NEW NEW 
+
+Use Your New Launcher
+From the command line, run:
+python launcher.py --mode trade        # Starts sniper bot (dry run)
+python launcher.py --mode wallet       # Shows balances
+python launcher.py --mode dashboard    # Opens UI
+python launcher.py --mode scan         # Starts token scanner
+
+
+💡 To go live, just change "test" to "live" inside launcher.py or modify start_snipper_bot.py to detect --live.
+
+
+

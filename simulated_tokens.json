@@ -1,0 +1,142 @@
+[
+  {
+    "name": "MockToken_1",
+    "chain": "Ethereum",
+    "address": "0x0001abc1234567890000000000000000000001",
+    "token_price_usd": 0.004511,
+    "buzz_score": 81
+  },
+  {
+    "name": "MockToken_2",
+    "chain": "BNB",
+    "address": "0x0002abc1234567890000000000000000000002",
+    "token_price_usd": 0.003082,
+    "buzz_score": 80
+  },
+  {
+    "name": "MockToken_3",
+    "chain": "Base",
+    "address": "0x0003abc1234567890000000000000000000003",
+    "token_price_usd": 0.005959,
+    "buzz_score": 99
+  },
+  {
+    "name": "MockToken_4",
+    "chain": "Solana",
+    "address": "SoLUrNXfilxSSMu2x63hqcWbD5GnHfoUp",
+    "token_price_usd": 0.000755,
+    "buzz_score": 68
+  },
+  {
+    "name": "MockToken_5",
+    "chain": "Solana",
+    "address": "SoL66KoaYJwYqGmKdhtnegk0AH3Ld9eSc",
+    "token_price_usd": 0.001804,
+    "buzz_score": 69
+  },
+  {
+    "name": "MockToken_6",
+    "chain": "Base",
+    "address": "0x0006abc1234567890000000000000000000006",
+    "token_price_usd": 0.001621,
+    "buzz_score": 73
+  },
+  {
+    "name": "MockToken_7",
+    "chain": "Solana",
+    "address": "SoLnS7AM0Zful0z9A1KJCKkXxLbbAOdLB",
+    "token_price_usd": 0.004772,
+    "buzz_score": 78
+  },
+  {
+    "name": "MockToken_8",
+    "chain": "Base",
+    "address": "0x0008abc1234567890000000000000000000008",
+    "token_price_usd": 0.000605,
+    "buzz_score": 70
+  },
+  {
+    "name": "MockToken_9",
+    "chain": "Solana",
+    "address": "SoLEgaQO3tM24cVaeLpFA0fVrCLaIbZsX",
+    "token_price_usd": 0.005624,
+    "buzz_score": 64
+  },
+  {
+    "name": "MockToken_10",
+    "chain": "Solana",
+    "address": "SoLjadChz6E4DrEwB7fQhG1cuHoZ5LPQY",
+    "token_price_usd": 0.002476,
+    "buzz_score": 99
+  },
+  {
+    "name": "MockToken_11",
+    "chain": "BNB",
+    "address": "0x0011abc1234567890000000000000000000011",
+    "token_price_usd": 0.004169,
+    "buzz_score": 63
+  },
+  {
+    "name": "MockToken_12",
+    "chain": "Solana",
+    "address": "SoLvLMGUT6uOcmpzV22SkFrKl8HP0WB4c",
+    "token_price_usd": 0.005933,
+    "buzz_score": 81
+  },
+  {
+    "name": "MockToken_13",
+    "chain": "Base",
+    "address": "0x0013abc1234567890000000000000000000013",
+    "token_price_usd": 0.004115,
+    "buzz_score": 65
+  },
+  {
+    "name": "MockToken_14",
+    "chain": "Base",
+    "address": "0x0014abc1234567890000000000000000000014",
+    "token_price_usd": 0.001905,
+    "buzz_score": 91
+  },
+  {
+    "name": "MockToken_15",
+    "chain": "Base",
+    "address": "0x0015abc1234567890000000000000000000015",
+    "token_price_usd": 0.002267,
+    "buzz_score": 69
+  },
+  {
+    "name": "MockToken_16",
+    "chain": "BNB",
+    "address": "0x0016abc1234567890000000000000000000016",
+    "token_price_usd": 0.002269,
+    "buzz_score": 82
+  },
+  {
+    "name": "MockToken_17",
+    "chain": "Base",
+    "address": "0x0017abc1234567890000000000000000000017",
+    "token_price_usd": 0.00287,
+    "buzz_score": 88
+  },
+  {
+    "name": "MockToken_18",
+    "chain": "Solana",
+    "address": "SoLjfylhLvo1h00ftzRBHSj4OMHttDWmd",
+    "token_price_usd": 0.003664,
+    "buzz_score": 95
+  },
+  {
+    "name": "MockToken_19",
+    "chain": "Base",
+    "address": "0x0019abc1234567890000000000000000000019",
+    "token_price_usd": 0.005651,
+    "buzz_score": 84
+  },
+  {
+    "name": "MockToken_20",
+    "chain": "Ethereum",
+    "address": "0x0020abc1234567890000000000000000000020",
+    "token_price_usd": 0.005557,
+    "buzz_score": 71
+  }
+]

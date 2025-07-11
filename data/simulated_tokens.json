@@ -1,0 +1,65 @@
+import json
+import random
+from utils.pl_tracker import estimate_trade_pl
+
+# 🔽 Generate simulated tokens
+tokens = [] [
+  { "name": "MemeRocket", "chain": "Ethereum", "address": "0x001A3Fabc1234567890000000000000000000001", "token_price_usd": 0.0028, "buzz_score": 85 },
+  { "name": "BananaSwap", "chain": "BNB", "address": "0x002B7Babc1234567890000000000000000000002", "token_price_usd": 0.0042, "buzz_score": 73 },
+  { "name": "MoonSquad", "chain": "Base", "address": "0x003C1Cabc1234567890000000000000000000003", "token_price_usd": 0.0039, "buzz_score": 90 },
+  { "name": "SolanaShiba", "chain": "Solana", "address": "SoLA9xjh23Aj1vb7YZZy9pGWQkDfA2t1Z2AAB7B1", "token_price_usd": 0.0013, "buzz_score": 66 },
+  { "name": "TurboDOGE", "chain": "Ethereum", "address": "0x004D4Dabc1234567890000000000000000000004", "token_price_usd": 0.0051, "buzz_score": 88 },
+  { "name": "PepeVerse", "chain": "BNB", "address": "0x005E9Eabc1234567890000000000000000000005", "token_price_usd": 0.0009, "buzz_score": 78 },
+  { "name": "BaseKong", "chain": "Base", "address": "0x006F3Fabc1234567890000000000000000000006", "token_price_usd": 0.0032, "buzz_score": 82 },
+  { "name": "SolWen", "chain": "Solana", "address": "SoLBC893rAj1vb7YZZy9pGWQkDfA2t1Z2AABB2Wn", "token_price_usd": 0.0020, "buzz_score": 59 },
+  { "name": "ETHCat", "chain": "Ethereum", "address": "0x007A1Aabc1234567890000000000000000000007", "token_price_usd": 0.0049, "buzz_score": 71 },
+  { "name": "BNBFomo", "chain": "BNB", "address": "0x008B3Babc1234567890000000000000000000008", "token_price_usd": 0.0016, "buzz_score": 77 },
+  { "name": "BaseChad", "chain": "Base", "address": "0x009C7Cabc1234567890000000000000000000009", "token_price_usd": 0.0025, "buzz_score": 92 },
+  { "name": "SolanaTroll", "chain": "Solana", "address": "SoLPK837rAj1vb7YZZy9pGWQkDfA2t1Z2AABTrLr", "token_price_usd": 0.0007, "buzz_score": 64 },
+  { "name": "RocketINU", "chain": "Ethereum", "address": "0x00AA2Aabc1234567890000000000000000000010", "token_price_usd": 0.0036, "buzz_score": 83 },
+  { "name": "BNBElon", "chain": "BNB", "address": "0x00BB8Babc1234567890000000000000000000011", "token_price_usd": 0.0011, "buzz_score": 70 },
+  { "name": "BaseAPE", "chain": "Base", "address": "0x00CC5Cabc1234567890000000000000000000012", "token_price_usd": 0.0045, "buzz_score": 89 },
+  { "name": "SolBaby", "chain": "Solana", "address": "SoLYJ129rAj1vb7YZZy9pGWQkDfA2t1Z2AABYBdB", "token_price_usd": 0.0023, "buzz_score": 60 },
+  { "name": "DegenETH", "chain": "Ethereum", "address": "0x00DD3Dabc1234567890000000000000000000013", "token_price_usd": 0.0058, "buzz_score": 95 },
+  { "name": "BNBZoomer", "chain": "BNB", "address": "0x00EE1Eabc1234567890000000000000000000014", "token_price_usd": 0.0027, "buzz_score": 69 },
+  { "name": "BaseLlama", "chain": "Base", "address": "0x00FF9Fabc1234567890000000000000000000015", "token_price_usd": 0.0019, "buzz_score": 74 },
+  { "name": "SolDrop", "chain": "Solana", "address": "SoLD859rAj1vb7YZZy9pGWQkDfA2t1Z2AABXx9Z", "token_price_usd": 0.0012, "buzz_score": 57 }
+]
+# 🔽 Load simulated tokens (expecting a list of token dicts)
+try:
+    with open("simulated_tokens.json", "r") as file:
+        tokens = json.load(file)
+
+    # Make sure data is a list
+    if not isinstance(tokens, list):
+        raise ValueError("Input JSON must be a list of token objects.")
+
+except Exception as e:
+    print(f"❌ Error loading simulated_tokens.json: {e}")
+    tokens = []
+
+# 🔁 Loop and inject mock values
+enriched_tokens = []
+for token in tokens:
+    try:
+        token["trade_amount_usd"] = 1.0
+        token["token_price_usd"] = 0.0034
+        token["estimated_return"] = round(random.uniform(10, 500), 4)
+
+        pl = estimate_trade_pl(token)
+        token["estimated_pl"] = round(pl, 4)
+
+        print(f"📊 {token.get('name', 'Unnamed')} | Return: {token['estimated_return']} | P/L: ${token['estimated_pl']}")
+        enriched_tokens.append(token)
+
+    except Exception as err:
+        print(f"⚠️ Error processing token {token.get('name', 'Unknown')}: {err}")
+
+# 💾 Save enriched tokens
+try:
+    with open("pl_simulated_results.json", "w") as outfile:
+        json.dump(enriched_tokens, outfile, indent=2)
+    print("✅ Saved results to pl_simulated_results.json")
+
+except Exception as e:
+    print(f"❌ Error saving output file: {e}")

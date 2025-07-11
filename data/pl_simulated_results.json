@@ -1,0 +1,41 @@
+import json
+import random
+from utils.pl_tracker import estimate_trade_pl
+
+# 🔽 Load simulated tokens safely
+try:
+    with open("simulated_tokens.json", "r") as file:
+        tokens = json.load(file)
+
+    if not isinstance(tokens, list):
+        raise ValueError("❌ JSON must contain a list of token dictionaries.")
+
+except Exception as e:
+    print(f"⚠️ Failed to load simulated_tokens.json: {e}")
+    tokens = []
+
+# 🧪 Loop and enrich each token
+enriched = []
+for token in tokens:
+    try:
+        token["trade_amount_usd"] = 1.0
+        token["token_price_usd"] = 0.0034
+        token["estimated_return"] = round(random.uniform(10, 500), 4)
+
+        pl = estimate_trade_pl(token)
+        token["estimated_pl"] = round(pl, 4)
+
+        print(f"📊 {token.get('name', 'Unnamed')} | Return: {token['estimated_return']} | P/L: ${token['estimated_pl']}")
+        enriched.append(token)
+
+    except Exception as err:
+        print(f"⚠️ Error processing token {token.get('name', 'Unknown')}: {err}")
+
+# 💾 Export result to new file
+try:
+    with open("pl_simulated_results.json", "w") as outfile:
+        json.dump(enriched, outfile, indent=2)
+    print("✅ Saved P/L simulation to pl_simulated_results.json")
+
+except Exception as e:
+    print(f"❌ Error saving results: {e}")
