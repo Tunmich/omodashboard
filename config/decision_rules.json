@@ -1,0 +1,10 @@
+{
+  "buzz_score": 0.6,
+  "risk_score": 0.4,
+  "min_roi": 1.25,
+  "max_price_impact": 20,
+  "min_liquidity_usd": 15000,
+  "social_score_min": 4,
+  "allow_non_renounced": false,
+  "flag_rugged_tokens": true
+}
