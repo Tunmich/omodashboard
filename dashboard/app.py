@@ -1,16 +1,26 @@
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import json
+import sys
+import os
+
+import sys
+import os
+import json
 import pandas as pd
 import altair as alt
 import streamlit as st
 import logging
+import re
 
-# 🔌 Load modules
+# 🔌 Load modules from utils
 from utils.chain_volume import get_chain_volumes
 from utils.gas_tracker import get_gas_price
 from utils.balance_checker import get_wallet_balance
 from utils.solana_balance import get_sol_balance
 from utils.trade_routing import select_optimal_chain
-from strategy.decision_engine import should_buy
 
+# 🔌 Load decision logic
+from strategy.decision_engine import should_buy
 st.set_page_config(page_title="OMO Dashboard", layout="wide")
 
 # -----------------------------------
@@ -182,7 +192,9 @@ except Exception as e:
 # 📜 Unified Terminal Log Viewer
 # -----------------------------------
 import os, re
-LOG_FILE = "terminal_log.txt"
+import os
+
+LOG_FILE = os.path.join("logs", "terminal_log.txt")
 
 st.subheader("📜 Terminal Log Stream")
 
