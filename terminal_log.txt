@@ -1,0 +1,3 @@
+2025-07-12 13:00:00 — INFO — Token Zuna passed decision logic
+2025-07-12 13:05:00 — WARNING — Low liquidity detected
+2025-07-12 13:10:00 — ERROR — Price impact too high

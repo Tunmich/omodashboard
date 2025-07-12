@@ -4,6 +4,12 @@ import threading
 import time
 import logging
 import sys
+from utils.router_factory import get_router_for_chain
+
+config = get_router_for_chain("bnb")  # or "ethereum"
+web3 = config["web3"]
+router = config["router"]
+weth_address = config["weth"]
 sys.stdout.reconfigure(encoding='utf-8')
 from auto_trade import run_trading_bot
 
