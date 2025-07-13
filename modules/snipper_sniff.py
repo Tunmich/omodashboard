@@ -1,24 +1,37 @@
-# modules/sniper_sniff.py
-
 import requests
 import time
 import logging
 from strategy.decision_engine import should_buy
-from modules.web3_buy import buy_token
+from modules.solana_executor import buy_token_solana
+from utils.sol_price_feed import fetch_sol_usd_price
+from utils.solana_balance import get_sol_balance
+from utils.solscan_api import fetch_token_price_solscan
 
-# Configure logging
+from utils.solscan_api import fetch_token_price_solscan
+
+def evaluate_roi(buy_price_usd, token_address, amount_sold):
+    current_price = fetch_token_price_solscan(token_address)
+    if not current_price:
+        return "?"
+
+    value_now = current_price * amount_sold
+    roi = ((value_now - buy_price_usd) / buy_price_usd) * 100
+    return round(roi, 2)
+
+
 logging.basicConfig(level=logging.INFO)
-
 DEX_API_URL = "https://api.dexscreener.com/latest/dex/pairs"
+USD_PER_TRADE = 1.00
+MAX_DAILY_SOL = 0.35
+total_sol_spent = 0
 
-def fetch_new_pairs(chain="ethereum", limit=20):
-    """Fetches recently listed token pairs from DexScreener"""
+def fetch_new_pairs(limit=20):
     try:
-        response = requests.get(f"{DEX_API_URL}/{chain}")
+        response = requests.get(f"{DEX_API_URL}/solana")
         data = response.json().get("pairs", [])
         return data[:limit]
     except Exception as e:
-        logging.error(f"Failed to fetch new pairs: {e}")
+        logging.error(f"❌ Failed to fetch Solana pairs: {e}")
         return []
 
 def extract_token_info(pair):
@@ -30,21 +43,49 @@ def extract_token_info(pair):
         "liquidity_usd": float(pair.get("liquidity", {}).get("usd", 0)),
         "price": float(pair.get("priceUsd", 0)),
         "social_score_x": pair.get("twitter", {}).get("followers", 0),
-        "owner_renounced": False,  # can be updated with rug checks
+        "owner_renounced": False,
         "rug_check": False
     }
 
 def scan_and_evaluate():
-    pairs = fetch_new_pairs(chain="ethereum")  # Can loop through multiple chains
+    sol_price = fetch_sol_usd_price()
+    if not sol_price:
+        logging.warning("⚠️ Cannot fetch SOL price, skipping scan.")
+        return
+
+    sol_amount = round(USD_PER_TRADE / sol_price, 4)
+    wallet_sol = get_sol_balance()
+
+    if wallet_sol < sol_amount + 0.01:
+        logging.warning(f"🛑 Insufficient balance. Available: {wallet_sol:.4f} SOL")
+        return
+
+    pairs = fetch_new_pairs()
+
     for pair in pairs:
-        token = extract_token_info(pair)
-        if should_buy(token):
-            # Trigger buy function
-            tx_link = buy_token(token["address"], amount_eth=0.01)
-            if tx_link:
-                logging.info(f"✅ Token sniped: {tx_link}")
+        try:
+            token = extract_token_info(pair)
+            name = token.get("name", "Unknown")
+            symbol = token.get("symbol", "N/A")
+            address = token.get("address", "0x0")
+            logging.info(f"🔍 Evaluating: {symbol} ({address})")
+
+            if should_buy(token):
+                if total_sol_spent + sol_amount > MAX_DAILY_SOL:
+                    logging.info("🚫 Daily SOL cap reached. Standing down.")
+                    break
+
+                tx_link = buy_token_solana(token["address"], amount_sol=sol_amount)
+
+                if tx_link:
+                    logging.info(f"✅ SPL token sniped: {tx_link}")
+                    total_sol_spent += sol_amount
+                else:
+                    logging.warning(f"⚠️ Trade failed for {symbol} ({address})")
             else:
-                logging.info(f"✅ Token sniped: {token['symbol']} ({token['address']})")
-        else:
-            logging.info(f"⛔ SKIPPED: {token['symbol']} did not pass screening.")
-        time.sleep(2)  # gentle pacing to avoid rate limits
+                logging.info(f"⛔ SKIPPED: {symbol} didn’t pass screening")
+
+        except Exception as e:
+            logging.error(f"🔥 Error during scan for {symbol}: {e}")
+
+        time.sleep(2)
