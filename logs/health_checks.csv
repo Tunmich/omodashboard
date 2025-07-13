@@ -1,0 +1,4 @@
+Timestamp,First_Attempt,Retry_Attempt,Status
+2025-07-13 06:00:01,OK,,Pass
+2025-07-14 06:00:03,Fail,OK,Retry Success
+2025-07-15 06:00:02,Fail,Fail,Fail
