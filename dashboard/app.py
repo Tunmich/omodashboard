@@ -1,167 +1,135 @@
 import sys
 import os
-import json
 import pandas as pd
 import altair as alt
 import streamlit as st
-import logging
-import re
-from modules.sniper_sniff import scan_and_evaluate
+from dotenv import load_dotenv
 
-if st.sidebar.button("🧬 Run Sniper CA Scan"):
-    scan_and_evaluate()
+# ✅ Load environment variables
+load_dotenv()
+sol_address = os.getenv("SOLANA_WALLET")
+raw_key = os.getenv("WALLET_PRIVATE_KEY")
+LOW_BALANCE_ALERT = float(os.getenv("LOW_BALANCE_ALERT", "0.01"))
 
-# 🔧 Add both parent and strategy folder to sys.path
+# 🔧 Fix Python path to find project modules
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-STRATEGY_DIR = os.path.join(BASE_DIR, 'strategy')
-sys.path.append(BASE_DIR)
-sys.path.append(STRATEGY_DIR)
+sys.path.insert(0, BASE_DIR)  # ✅ Ensures 'utils' and 'modules' folders are discoverable
+sys.path.append(os.path.join(BASE_DIR, 'strategy'))
 
-# 🔌 Load decision logic and modules
-from strategy.decision_engine import should_buy
+# 🔐 Wallet setup for SOL balance tracking
+from solders.keypair import Keypair
+from utils.solana_balance import get_sol_balance
+wallet = Keypair.from_base58_string(raw_key)
+sol_balance = get_sol_balance(wallet.pubkey())
+
+# 🔌 Load core modules
+from strategy.trade_decision_engine import should_buy
+from utils.wallet_mapper import phantom_to_evm
 from utils.chain_volume import get_chain_volumes
 from utils.gas_tracker import get_gas_price
 from utils.balance_checker import get_wallet_balance
-from utils.solana_balance import get_sol_balance
 from utils.trade_routing import select_optimal_chain
+from modules.sniper_engine import scan_and_evaluate
 
-# 🧾 Load logs
-LOG_FILE = os.path.join("logs", "terminal_log.txt")
-
+# 🧠 UI Config
 st.set_page_config(page_title="OMO Dashboard", layout="wide")
 
-# -----------------------------------
-# 🧠 Sidebar: Smart Chain Metrics
-# -----------------------------------
+# 🔐 EVM Wallet Display
+st.sidebar.markdown("### 🔐 EVM Wallet")
+if sol_address:
+    try:
+        evm_wallet = phantom_to_evm(sol_address)
+        st.sidebar.code(evm_wallet, language='text')
+    except Exception as e:
+        st.sidebar.warning(f"⚠️ Failed to inject EVM wallet: {e}")
+else:
+    st.sidebar.info("⚠️ SOLANA_WALLET not found in .env")
+
+# 🚨 SOL Balance Alert
+if sol_balance < LOW_BALANCE_ALERT:
+    st.sidebar.error(f"⚠️ LOW SOL Balance: {sol_balance:.5f}")
+else:
+    st.sidebar.success(f"💰 SOL Balance: {sol_balance:.5f} SOL")
+
+# 🧬 Trigger Sniper CA Scan
+if st.sidebar.button("🧬 Run Sniper CA Scan"):
+    scan_and_evaluate()
+    st.experimental_rerun()
+
+# 🧠 Chain Metrics Snapshot
 st.sidebar.subheader("🧠 Chain Metrics Snapshot")
 volumes = get_chain_volumes()
-gas_prices = {chain: get_gas_price(chain) for chain in volumes}
-balances = {chain: get_wallet_balance(chain) for chain in volumes}
-sol_balance = get_sol_balance()
+gas_prices = {c: get_gas_price(c) for c in volumes}
+balances = {c: get_wallet_balance(c) for c in volumes}
 
-for chain in volumes:
-    st.sidebar.markdown(f"**{chain}**")
-    st.sidebar.write(f"🌊 Volume: ${volumes[chain]:,.0f}")
-    st.sidebar.write(f"⛽ Gas: {gas_prices.get(chain, 'N/A')} Gwei")
-    st.sidebar.write(f"💰 Balance: {balances.get(chain, 0):.5f}")
+for c in volumes:
+    st.sidebar.markdown(f"**{c}**")
+    st.sidebar.write(f"🌊 Volume: ${volumes[c]:,.0f}")
+    st.sidebar.write(f"⛽ Gas: {gas_prices.get(c, 'N/A')} Gwei")
+    st.sidebar.write(f"💰 Balance: {balances.get(c, 0):.5f}")
 
-st.sidebar.markdown("**Solana**")
-st.sidebar.write(f"🌊 Volume: ${volumes.get('Solana', 0):,.0f}")
-st.sidebar.write("⛽ Gas: negligible")
-st.sidebar.write(f"💰 Balance: {sol_balance:.5f} SOL")
+st.sidebar.markdown(f"### 🟢 Preferred Chain → `{select_optimal_chain()}`")
 
-best_chain = select_optimal_chain()
-st.sidebar.markdown(f"### 🟢 Preferred Chain → `{best_chain}`")
-
-# -----------------------------------
-# 🧾 Historical Token Review & Re-Scoring
-# -----------------------------------
+# 🧾 Historical Token Re-Scoring
 st.subheader("🧾 Historical Token Review & Re-Scoring")
-
 try:
     hist_df = pd.read_csv("logs/historical_tokens.csv", engine="python")
     hist_df["Re-evaluated"] = hist_df.apply(lambda row: should_buy(dict(row)), axis=1)
 
-    search_term = st.text_input("🔍 Search by Token Name", "")
-    if search_term:
-        hist_df = hist_df[hist_df["name"].str.contains(search_term, case=False)]
+    term = st.text_input("🔍 Search by Token Name", "")
+    if term:
+        hist_df = hist_df[hist_df["name"].str.contains(term, case=False)]
 
-    show_pass_only = st.checkbox("✅ Show only tokens that now pass decision logic", value=False)
-    if show_pass_only:
+    if st.checkbox("✅ Show only tokens that now pass", value=False):
         hist_df = hist_df[hist_df["Re-evaluated"] == True]
 
-    st.dataframe(
-        hist_df[["name", "chain", "buzz_score", "risk_score", "estimated_return", "token_price_usd", "Re-evaluated"]]
-        .rename(columns={
-            "name": "Token",
-            "chain": "Chain",
-            "buzz_score": "Buzz",
-            "risk_score": "Risk",
-            "estimated_return": "$1 Output",
-            "token_price_usd": "Price ($)",
-            "Re-evaluated": "Passes Now"
-        }),
-        use_container_width=True
-    )
-
+    st.dataframe(hist_df[["name", "chain", "buzz_score", "risk_score", "estimated_return", "token_price_usd", "Re-evaluated"]]
+        .rename(columns={"name": "Token", "chain": "Chain", "buzz_score": "Buzz", "risk_score": "Risk",
+                         "estimated_return": "$1 Output", "token_price_usd": "Price ($)", "Re-evaluated": "Passes Now"}),
+        use_container_width=True)
 except Exception as e:
-    st.warning(f"⚠️ Could not load historical token log: {e}")
+    st.warning(f"⚠️ Could not load token log: {e}")
 
-# -----------------------------------
-# 📈 Trade ROI Leaderboard (Estimated Payout Focus)
-# -----------------------------------
+# 📈 Trade ROI Leaderboard
 st.subheader("📈 Trade ROI Leaderboard")
-
 try:
     roi_df = pd.read_csv("logs/trades.csv")
+    roi_df["Estimated_Payout_Score"] = pd.to_numeric(
+        roi_df["Estimated_Payout"].astype(str)
+        .str.replace("%", "").str.replace("Pending", "").str.strip(), errors="coerce")
 
-    if "Estimated_Payout" in roi_df.columns and "Token" in roi_df.columns:
-        roi_df["Estimated_Payout_Score"] = (
-            roi_df["Estimated_Payout"]
-            .astype(str)
-            .str.replace("%", "", regex=False)
-            .str.replace("Pending", "", regex=False)
-            .str.strip()
-        )
-        roi_df["Estimated_Payout_Score"] = pd.to_numeric(roi_df["Estimated_Payout_Score"], errors="coerce")
-
-        st.dataframe(
-            roi_df.sort_values(by="Estimated_Payout_Score", ascending=False)[
-                ["Token", "Chain", "Amount_ETH", "Estimated_Payout", "Tx_Link", "Status"]
-            ],
-            use_container_width=True
-        )
-    else:
-        st.info("📭 No Estimated_Payout or Token data found in trades.csv.")
-
+    st.dataframe(
+        roi_df.sort_values("Estimated_Payout_Score", ascending=False)[
+            ["Token", "Chain", "Amount_ETH", "Estimated_Payout", "Tx_Link", "Status"]
+        ],
+        use_container_width=True
+    )
 except Exception as e:
     st.warning(f"⚠️ Could not load ROI leaderboard: {e}")
 
-# -----------------------------------
-# 🏆 Confirmed Trades ROI Leaderboard
-# -----------------------------------
+# 🏆 Confirmed Trades ROI
 st.subheader("🏆 Confirmed Trades ROI Leaderboard")
-
 try:
     df = pd.read_csv("logs/trades.csv")
-    df["Timestamp"] = pd.to_datetime(df["Timestamp"], format='mixed', dayfirst=True, errors='coerce')
+    df["Timestamp"] = pd.to_datetime(df["Timestamp"], errors="coerce")
     df["Date"] = df["Timestamp"].dt.date
-    df["P/L ($)"] = pd.to_numeric(df["estimated_pl"], errors="coerce")
-    roi_df = df.sort_values(by="ROI", ascending=False)
-
-    st.dataframe(
-        roi_df[["name", "chain", "ROI", "estimated_return", "estimated_value", "P/L ($)"]]
-        .rename(columns={
-            "name": "Token",
-            "chain": "Chain",
-            "estimated_return": "$1 Output",
-            "estimated_value": "Market Value",
-            "P/L ($)": "Profit/Loss"
-        }),
-        use_container_width=True
-    )
-
-except Exception as e:
-    st.info(f"📦 No confirmed trades found yet. ({e})")
-
-# -----------------------------------
-# 📊 Profit & ROI Performance
-# -----------------------------------
-st.subheader("📊 Profit & ROI Performance")
-
-try:
     df["P/L ($)"] = pd.to_numeric(df["estimated_pl"], errors="coerce")
     df["ROI"] = pd.to_numeric(df["ROI"], errors="coerce")
 
+    st.dataframe(df.sort_values("ROI", ascending=False)[["name", "chain", "ROI", "estimated_return", "estimated_value", "P/L ($)"]]
+        .rename(columns={"name": "Token", "chain": "Chain", "estimated_return": "$1 Output",
+                         "estimated_value": "Market Value", "P/L ($)": "Profit/Loss"}),
+        use_container_width=True)
+except Exception as e:
+    st.info(f"📦 No confirmed trades found yet. ({e})")
+
+# 📊 Profit Performance Chart
+st.subheader("📊 Profit & ROI Performance")
+try:
     pl_chart = alt.Chart(df).mark_bar().encode(
-        x="Timestamp:T",
-        y="P/L ($):Q",
+        x="Timestamp:T", y="P/L ($):Q",
         tooltip=["name", "chain", "P/L ($)", "ROI"]
-    ).properties(
-        title="📆 P/L by Trade Timestamp",
-        width=800,
-        height=300
-    )
+    ).properties(title="📆 P/L by Trade Timestamp", width=800, height=300)
     st.altair_chart(pl_chart, use_container_width=True)
 
     chain_summary = df.groupby("chain")["P/L ($)"].sum().reset_index()
@@ -171,32 +139,5 @@ try:
     roi_trend = df.groupby("Date")["ROI"].mean().reset_index()
     st.subheader("📈 Daily Average ROI")
     st.line_chart(roi_trend.set_index("Date"))
-
 except Exception as e:
-    st.warning(f"⚠️ Error loading performance charts: {e}")
-
-# -----------------------------------
-# 🧪 Simulated Token Profit/Loss Estimates
-# -----------------------------------
-# -----------------------------------
-# 📊 Top Simulated P/L Estimates
-# -----------------------------------
-st.subheader("📊 Top Simulated P/L Estimates")
-try:
-    top_sim = sim_df.sort_values(by="Est. Profit/Loss", ascending=False).head(10)
-
-    chart = alt.Chart(top_sim).mark_bar().encode(
-        x=alt.X("Token:N", title="Token"),
-        y=alt.Y("Est. Profit/Loss:Q", title="Estimated Profit ($)"),
-        color="Chain:N",
-        tooltip=["Token", "Chain", "Est. Profit/Loss", "Market Value ($)"]
-    ).properties(
-        height=300,
-        width=700,
-        title="🔝 Top Simulated Profit Estimates"
-    )
-
-    st.altair_chart(chart, use_container_width=True)
-
-except Exception as e:
-    st.warning(f"⚠️ Could not generate simulated profit chart: {e}")
+    st.warning(f"⚠️ Error loading charts: {e}")
