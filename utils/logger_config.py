@@ -1,24 +1,35 @@
 # utils/logger_config.py
-import logging
-# utils/logger_config.py
 
 import logging
-from logging.handlers import RotatingFileHandler
+import os
 
-def setup_logger(log_file="terminal_log.txt", max_bytes=5_000_000, backup_count=3):
-    logger = logging.getLogger()
-    if logger.hasHandlers():
-        return
+def setup_logger(name: str, log_file: str = "app.log", level: int = logging.INFO) -> logging.Logger:
+    """Sets up and returns a named logger with both file and console handlers."""
 
-    logger.setLevel(logging.INFO)
+    # Ensure logs directory exists
+    os.makedirs("logs", exist_ok=True)
+    log_path = os.path.join("logs", log_file)
 
-    # Main log: rotates when it hits ~5MB
-    handler = RotatingFileHandler(log_file, maxBytes=max_bytes, backupCount=backup_count)
-    formatter = logging.Formatter("%(asctime)s — %(levelname)s — %(message)s")
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
+    # Format config
+    formatter = logging.Formatter(
+        "[%(asctime)s] %(levelname)s:%(name)s: %(message)s", "%Y-%m-%d %H:%M:%S"
+    )
 
-    # Optional: Also log to terminal
-    stream_handler = logging.StreamHandler()
-    stream_handler.setFormatter(formatter)
-    logger.addHandler(stream_handler)
+    # File handler
+    file_handler = logging.FileHandler(log_path)
+    file_handler.setFormatter(formatter)
+
+    # Console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+
+    # Create or get the logger
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+
+    # Prevent duplicate handlers
+    if not logger.handlers:
+        logger.addHandler(file_handler)
+        logger.addHandler(console_handler)
+
+    return logger

@@ -24,10 +24,10 @@ def get_router_for_chain(chain_name):
     web3 = Web3(Web3.HTTPProvider(config["rpc"]))
     with open("abis/uniswap_v2_router.json", "r") as f:
         abi = json.load(f)
-    router = web3.eth.contract(address=Web3.toChecksumAddress(config["router"]), abi=abi)
+    router = web3.eth.contract(address=Web3.to_checksum_address(config["router"]), abi=abi)
 
     return {
         "web3": web3,
         "router": router,
-        "weth": Web3.toChecksumAddress(config["weth"])
+        "weth": Web3.to_checksum_address(config["weth"])
     }
