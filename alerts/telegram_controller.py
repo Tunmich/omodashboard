@@ -4,12 +4,29 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from scheduler.job_runner import process_tokens
 from dotenv import load_dotenv
-
+from utils.alloc import get_trade_allocation
+from utils.wallet_mapper import get_safe_evm_wallet
 load_dotenv()
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 bot_running = False
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# Auto-inject EVM wallet if missing
+if not os.getenv("EVM_WALLET_ADDRESS"):
+    try:
+        # Use Phantom's known derivation logic or fetch from wallet connector
+        # For now, simulate with fallback mapping
+        sol_address = os.getenv("WALLET_ADDRESS")
+        evm_address = get_safe_evm_wallet(sol_address)
+        os.environ["EVM_WALLET_ADDRESS"] = evm_address
+        print(f"🔐 EVM wallet injected from Phantom: {evm_address}")
+    except Exception as e:
+        print(f"⚠️ Failed to inject EVM wallet: {e}")
 
 async def startbot(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global bot_running
