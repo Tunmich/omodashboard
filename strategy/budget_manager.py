@@ -1,28 +1,36 @@
 # utils/budget_manager.py
-import logging
 
-def get_trade_allocation(total_usd, win_streak=0):
+def get_trade_allocation(total_usd: float, win_streak: int = 0) -> float:
     """
     Allocates trade budget based on current win streak.
+
+    Strategy:
     - Starts at $1.
-    - Increases gradually per win.
+    - Increases incrementally per win.
     - Resets to $1 on a loss.
     - Capped at $5.
+    
+    Args:
+        total_usd (float): Available wallet balance.
+        win_streak (int): Current consecutive win count.
+        
+    Returns:
+        float: Allocation for next trade.
     """
-    # Cap wallet to $5 max for low-stake test strategy
+    # Ensure wallet cap — test bot runs on <$10 budget
     simulated_budget = min(total_usd, 5.0)
 
-    # Define win-streak based increments
+    # Define win-streak-based increments
     streak_map = {
         0: 1.0,
         1: 1.5,
         2: 2.0,
         3: 3.0,
-        4: 4.0,
+        4: 4.0
     }
 
-    # Get allocation based on win streak, default to $5 for >= 5 wins
+    # Use streak map or $5 max for streaks ≥ 5
     allocation = streak_map.get(win_streak, 5.0)
 
-    # Ensure we don’t exceed wallet amount
+    # Final guard against exceeding wallet
     return min(allocation, simulated_budget)

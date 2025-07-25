@@ -1,9 +1,9 @@
 import logging
 
 from utils.logger_config import setup_logger
-setup_logger()
+logger = setup_logger("eth_scanner")
 
-def scan_eth_tokens():
+def scan_eth_tokens(limit=30):
     """
     Simulates scanning Ethereum-based meme tokens.
     Returns a list of token dictionaries.

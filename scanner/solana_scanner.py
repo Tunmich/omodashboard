@@ -1,9 +1,9 @@
 import logging
 
 from utils.logger_config import setup_logger
-setup_logger()
+logger = setup_logger("solana_scanner")
 
-def scan_solana_tokens():
+def scan_solana_tokens(limit=30):
     """
     Simulates scanning Solana-based meme tokens.
     Returns a list of token dictionaries.

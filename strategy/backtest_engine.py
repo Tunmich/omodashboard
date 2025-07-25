@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 
-from strategy.decision_engine import should_buy
+from strategy.trade_decision_engine import should_buy
 
 def run_backtest(log_file="logs/historical_tokens.csv"):
     try:
