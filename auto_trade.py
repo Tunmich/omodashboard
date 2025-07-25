@@ -5,7 +5,7 @@ from utils.trade_predictor import predict_success
 import logging
 from web3 import Web3
 
-from alerts.telegram import send_message
+from alerts.telegram_bot import send_message
 
 SIMULATE_TRADES = True  # Set to False for live trading
 
@@ -65,8 +65,8 @@ def simulate_trade(token):
             logging.warning(f"🚫 No router address configured for {token['chain']}")
             return
 
-        router = web3.eth.contract(address=Web3.toChecksumAddress(router_address), abi=ROUTER_ABI)
-        path = [Web3.toChecksumAddress(token["address"]), USDC]
+        router = web3.eth.contract(address=Web3.to_checksum_address(router_address), abi=ROUTER_ABI)
+        path = [Web3.to_checksum_address(token["address"]), USDC]
         raw_amounts = router.functions.getAmountsOut(TRADE_AMOUNT_WEI, path).call()
         estimated_output = raw_amounts[-1] if raw_amounts else 0
 

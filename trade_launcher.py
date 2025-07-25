@@ -4,37 +4,49 @@ import random
 import requests
 from dotenv import load_dotenv
 from solders.keypair import Keypair
-from modules.solana_executor import execute_sol_trade, send_telegram_alert, log_sniper_trade
+from modules.solana_executor import execute_sol_trade, send_telegram_alert
+from utils.wallet_mapper import get_safe_evm_wallet
 
-# 🚀 Load .env
+# 🚀 Load environment
 load_dotenv()
 
-# 🔑 Wallet
+# 🔐 Auto-inject EVM wallet if missing
+if not os.getenv("EVM_WALLET_ADDRESS"):
+    sol_address = os.getenv("SOLANA_WALLET") or os.getenv("WALLET_ADDRESS")
+    evm_address = get_safe_evm_wallet(sol_address)
+    if evm_address:
+        os.environ["EVM_WALLET_ADDRESS"] = evm_address
+        print(f"🔐 EVM wallet injected from Phantom: {evm_address}")
+    else:
+        print("⚠️ Failed to inject EVM wallet.")
+
+# 🔑 Load Solana wallet
 raw_key = os.getenv("WALLET_PRIVATE_KEY")
 wallet = Keypair.from_base58_string(raw_key)
 
-# Updated mint loader
+# 📥 Load mint targets
 file_mints = []
 if os.path.exists("auto_mints.txt"):
     with open("auto_mints.txt", "r") as f:
-        file_mints = [line.strip() for line in f.readlines() if line.strip()]
+        file_mints = [line.strip() for line in f if line.strip()]
 
 env_mints = [mint.strip() for mint in os.getenv("AUTO_MINT_LIST", "").split(",") if mint.strip()]
-mint_targets = list(set(env_mints + file_mints))  # Merge & de-dupe
+mint_targets = list(set(env_mints + file_mints))  # Merge & dedupe
+
 if not mint_targets:
     print("❌ No mints found in AUTO_MINT_LIST.")
     exit()
 
-# 💰 Per-trade amount
+# 💰 Trade parameters
 sol_amount = float(os.getenv("USD_PER_TRADE", "0.05"))
 
 # 📊 Summary log
 daily_report = []
 
-# 🕵️‍♂️ Mint name lookup
+# 🕵️‍♂️ Token name lookup
 def get_token_name(mint):
     try:
-        url = f"https://api.mainnet-beta.solana.com"
+        url = "https://api.mainnet-beta.solana.com"
         headers = {"Content-Type": "application/json"}
         payload = {
             "jsonrpc": "2.0",
@@ -43,8 +55,7 @@ def get_token_name(mint):
             "params": [mint, {"encoding": "jsonParsed"}]
         }
         res = requests.post(url, json=payload, headers=headers).json()
-        name = res["result"]["value"]["data"]["parsed"]["info"]["name"]
-        return name
+        return res["result"]["value"]["data"]["parsed"]["info"]["name"]
     except:
         return "UnknownToken"
 
@@ -52,51 +63,40 @@ def get_token_name(mint):
 def send_daily_summary():
     if not daily_report:
         return
-
-    summary_text = "*📊 Daily Sniper Summary*\n\n"
+    summary = "*📊 Daily Sniper Summary*\n\n"
     for entry in daily_report:
-        summary_text += f"✅ `{entry['name']}`\nMint: `{entry['mint']}`\nAmount: {entry['amount']} SOL\nTX: [View](https://solscan.io/tx/{entry['tx']})\n\n"
+        summary += f"✅ `{entry['name']}`\nMint: `{entry['mint']}`\nAmount: {entry['amount']} SOL\nTX: [View](https://solscan.io/tx/{entry['tx']})\n\n"
+    send_telegram_alert(summary)
 
-    send_telegram_alert(summary_text)
-
-# 🔁 Patrol loop
-print(f"🧭 OMO patrol initiated. Targets loaded.")
+# 🔁 Main patrol loop
+print("🧭 OMO patrol initiated. Targets loaded.")
 counter = 0
+
 while True:
     mint = random.choice(mint_targets)
     token_name = get_token_name(mint)
-
     print(f"\n⏳ Cycle {counter + 1} ➝ {token_name} ({mint})")
 
     success = execute_sol_trade(mint, sol_amount, wallet)
+    if not success:
+        print(f"🔁 Retrying ➝ {token_name}")
+        time.sleep(10)
+        success = execute_sol_trade(mint, sol_amount, wallet)
+
     if success:
         daily_report.append({
             "mint": mint,
             "name": token_name,
             "amount": sol_amount,
-            "tx": "Logged"  # TX included inside `execute_sol_trade`
+            "tx": "Logged"
         })
     else:
-        print(f"🔁 Retrying ➝ {token_name}")
-        time.sleep(10)
-        retry = execute_sol_trade(mint, sol_amount, wallet)
-        if retry:
-            daily_report.append({
-                "mint": mint,
-                "name": token_name,
-                "amount": sol_amount,
-                "tx": "Logged"
-            })
-        else:
-            print(f"🛑 Failed after retry: {token_name}")
+        print(f"🛑 Failed after retry: {token_name}")
 
     counter += 1
-
-    # 💤 Sleep 1 hour per cycle
     print("🕒 OMO resting for 1 hour...\n")
     time.sleep(3600)
 
-    # 📤 Send daily summary every 6 cycles
     if counter % 6 == 0:
         send_daily_summary()
         daily_report = []

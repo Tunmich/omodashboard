@@ -51,4 +51,4 @@ if __name__ == "__main__":
         start_scheduler()
 
     elif args.mode == "trade":
-        start_sniper("test")  # Change to "live" if ready for real trading
+        start_sniper("live")  # Change to "live" if ready for real trading
