@@ -823,3 +823,25 @@
 2025-08-04 18:33:48,868 [INFO] \u2705 intel_patrol.PatrolManager exists
 2025-08-04 18:33:48,869 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
 2025-08-04 18:33:48,874 [INFO] \U0001f9e0 CPU: 28.8%, Memory: 84.6%
+2025-08-05 17:35:10,895 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-05 17:35:13,939 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-05 17:35:13,947 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-05 17:35:32,270 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-05 17:36:08,284 [INFO] Sniper engine initialized.
+2025-08-05 17:36:08,285 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-05 17:36:10,736 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-05 17:36:10,858 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-05 17:36:10,904 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-05 17:36:10,953 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-05 17:36:10,970 [INFO] \U0001f9e0 CPU: 18.3%, Memory: 87.2%
+2025-08-05 18:11:30,774 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-05 18:11:32,761 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-05 18:11:32,761 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-05 18:11:38,634 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-05 18:11:56,716 [INFO] Sniper engine initialized.
+2025-08-05 18:11:56,732 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-05 18:11:58,738 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-05 18:11:58,816 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-05 18:11:58,836 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-05 18:11:58,911 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-05 18:11:58,926 [INFO] \U0001f9e0 CPU: 8.2%, Memory: 84.1%
