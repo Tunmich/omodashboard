@@ -1,41 +1,40 @@
+1===	.venv\Scripts\Activate
+====	deactivate
 
-    Directory: C:\Users\segun\Desktop\Projects\Meme_bot
+
+2===	python main.py
 
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         7/12/2025  11:34 PM                .venv
-d-----         7/12/2025   3:16 PM                abis
-d-----         7/11/2025   2:26 PM                alerts
-d-----         7/12/2025   2:23 PM                config
-d-----         7/11/2025   5:40 PM                dashboard
-d-----         7/10/2025   3:10 AM                data
-d-----         7/12/2025  10:29 PM                jobs
-d-----         7/12/2025   3:50 PM                logs
-d-----         7/12/2025   3:26 PM                modules
-d-----         7/11/2025   2:50 PM                predictor
-d-----         7/10/2025   5:11 AM                scanner
-d-----         7/10/2025   4:07 AM                scheduler
-d-----         7/11/2025  10:43 PM                strategy
-d-----         7/11/2025  11:38 AM                tools
-d-----         7/11/2025   2:20 PM                trading
-d-----         7/12/2025   3:46 PM                triggers
-d-----         7/13/2025   1:03 AM                utils
-d-----         7/11/2025   2:41 PM                __pycache__
--a----         7/13/2025  12:39 AM            984 .env
--a----         7/11/2025   4:52 PM             26 .gitignore
--a----         7/11/2025   2:40 PM           4952 auto_trade.py
--a----         7/10/2025   3:52 AM            199 Dockerfile
--a----         7/11/2025  12:23 PM            273 healthy_rpcs.json
--a----         7/11/2025   2:08 PM           1610 launcher.py
--a----         7/12/2025   2:20 PM            137 main.py
--a----         7/11/2025   1:42 PM          34379 Memebot usage instructions 2.txt
--a----         7/10/2025  11:37 PM           3896 Memebot usage instructions.txt
--a----         7/12/2025   1:43 PM            289 pl_simulated_results.json
--a----         7/10/2025   3:42 AM            931 README.md
--a----         7/11/2025   4:27 PM            183 requirements.txt
--a----         7/10/2025   4:10 AM            446 run.sh
--a----         7/10/2025   4:39 AM           3523 simulated_tokens.json
--a----          7/9/2025   9:58 PM            198 start.sh
--a----         7/12/2025   3:20 PM           2217 start_sniper_bot.py
--a----         7/12/2025   1:29 PM            182 terminal_log.txt
+3===	python health_check.py --ping
+
+4===	python utils/preflight_checker.py
+
+5=== SHOWS MENU ====	python bootstrap.py
+
+6==== TELEGRAM SESSION ID GEN ===python gen_session.py
+Run it once:
+
+You’ll enter the code Telegram sends, and it will generate a user_session.session file.
+
+python utils/id_resolver.py
+You can continue adding more without issue — the resolver will append them automatically on next scan.
+
+7===	pip install --upgrade pip 
+ 	pip install -r requirements.txt
+FOR GROUP CHAT ID RETRIEVER
+
+Run:
+
+bash
+python gen_session.py
+Enter:
+
+The verification code from Telegram
+
+Your Telegram password (if prompted)
+
+=======python utils/chat_id_resolver.py
+
+FOR SEARCHING 
+grep -R "phantom_to_evm" . | grep -v __pycache__
+

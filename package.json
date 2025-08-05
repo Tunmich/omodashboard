@@ -1,0 +1,27 @@
+{
+  "name": "meme_bot1",
+  "version": "1.0.0",
+  "description": "A fully automated, multi-chain meme token scanner and sniper bot with trading, dashboard, Telegram alerts, ROI predictions, and wallet intelligence — designed for budget-conscious traders starting with just $10.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tunmich/omodashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Tunmich/omodashboard/issues"
+  },
+  "homepage": "https://github.com/Tunmich/omodashboard#readme",
+  "dependencies": {
+    "streamlit-component-lib": "^2.0.0"
+  }
+}

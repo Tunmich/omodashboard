@@ -1,0 +1,10 @@
+2025-07-21 16:44:59,485 [INFO] Scheduler started
+2025-07-21 17:25:36,580 [INFO] Scheduler started
+2025-07-21 17:29:51,047 [INFO] Received signal 2 (SIGINT), stopping...
+2025-07-21 17:29:51,047 [INFO] Scheduler has been shut down
+2025-07-21 17:42:43,559 [INFO] Scheduler started
+2025-07-21 17:53:08,933 [INFO] Received signal 2 (SIGINT), stopping...
+2025-07-21 17:53:08,934 [INFO] Scheduler has been shut down
+2025-07-21 18:01:13,943 [INFO] Scheduler started
+2025-07-21 18:15:49,602 [INFO] Received signal 2 (SIGINT), stopping...
+2025-07-21 18:15:49,603 [INFO] Scheduler has been shut down

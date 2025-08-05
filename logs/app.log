@@ -1,0 +1,219 @@
+[2025-07-21 10:28:12] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 10:38:15] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 10:48:17] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 10:53:00] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 11:10:33] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 11:10:40] INFO:scheduler: Skipped: ETHMeme - Ethereum
+[2025-07-21 11:10:45] INFO:scheduler: Skipped: TurboShiba - Ethereum
+[2025-07-21 11:10:59] INFO:scheduler: Skipped: BNBPepe - BNB
+[2025-07-21 11:11:12] INFO:scheduler: Skipped: ZoomBNB - BNB
+[2025-07-21 11:11:15] INFO:scheduler: Skipped: BaseDOGE - Base
+[2025-07-21 11:11:17] INFO:scheduler: Skipped: ChadBase - Base
+[2025-07-21 11:11:17] INFO:scheduler: Skipped: SolMeme - Solana
+[2025-07-21 11:11:17] INFO:scheduler: Skipped: SolTroll - Solana
+[2025-07-21 11:11:17] INFO:scheduler: Waiting 10 minutes...
+
+[2025-07-21 11:35:50] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 11:35:53] INFO:scheduler: Skipped: ETHMeme - Ethereum
+[2025-07-21 11:35:56] INFO:scheduler: Skipped: TurboShiba - Ethereum
+[2025-07-21 11:36:08] INFO:scheduler: Skipped: BNBPepe - BNB
+[2025-07-21 11:36:21] INFO:scheduler: Skipped: ZoomBNB - BNB
+[2025-07-21 11:36:22] INFO:scheduler: Skipped: BaseDOGE - Base
+[2025-07-21 11:36:24] INFO:scheduler: Skipped: ChadBase - Base
+[2025-07-21 11:36:24] INFO:scheduler: Skipped: SolMeme - Solana
+[2025-07-21 11:36:24] INFO:scheduler: Skipped: SolTroll - Solana
+[2025-07-21 11:36:24] INFO:scheduler: Waiting 10 minutes...
+
+[2025-07-21 11:47:42] INFO:scheduler: Starting scan for new meme tokens
+[2025-07-21 11:47:54] INFO:scheduler: Skipped: ETHMeme - Ethereum
+[2025-07-21 11:48:08] INFO:scheduler: Skipped: TurboShiba - Ethereum
+[2025-07-21 11:48:08] INFO:scheduler: Waiting 10 minutes before next scan...
+
+[2025-07-23 15:03:24] INFO:sniper: Sniper engine initialized.
+[2025-07-23 15:24:58] INFO:sniper: Sniper engine initialized.
+[2025-07-23 16:01:35] INFO:sniper: Sniper engine initialized.
+[2025-07-23 16:29:26] INFO:sniper: Sniper engine initialized.
+[2025-07-23 17:13:08] INFO:sniper: Sniper engine initialized.
+[2025-07-23 18:07:37] INFO:sniper: Sniper engine initialized.
+[2025-07-23 18:14:13] INFO:sniper: Sniper engine initialized.
+[2025-07-23 18:34:56] INFO:sniper: Sniper engine initialized.
+[2025-07-23 18:44:19] INFO:sniper: Sniper engine initialized.
+[2025-07-23 18:50:22] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:53:02] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:53:34] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:56:03] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:56:44] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:57:15] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:57:37] INFO:sniper: Sniper engine initialized.
+[2025-07-23 23:58:32] INFO:sniper: Sniper engine initialized.
+[2025-07-24 00:10:34] INFO:sniper: Sniper engine initialized.
+[2025-07-24 00:23:27] INFO:sniper: Sniper engine initialized.
+[2025-07-24 09:57:11] INFO:sniper: Sniper engine initialized.
+[2025-07-24 11:18:30] INFO:sniper: Sniper engine initialized.
+[2025-07-24 11:20:54] INFO:sniper: Sniper engine initialized.
+[2025-07-24 11:33:03] INFO:sniper: Sniper engine initialized.
+[2025-07-24 11:41:29] INFO:sniper: Sniper engine initialized.
+[2025-07-24 11:55:39] INFO:sniper: Sniper engine initialized.
+[2025-07-24 12:04:00] INFO:sniper: Sniper engine initialized.
+[2025-07-24 12:10:57] INFO:sniper: Sniper engine initialized.
+[2025-07-24 12:13:15] INFO:sniper: Sniper engine initialized.
+[2025-07-24 12:14:48] INFO:sniper: Sniper engine initialized.
+[2025-07-24 12:24:46] INFO:sniper: Sniper engine initialized.
+[2025-07-24 14:30:27] INFO:sniper: Sniper engine initialized.
+[2025-07-24 14:37:42] INFO:sniper: Sniper engine initialized.
+[2025-07-24 14:38:08] INFO:sniper: Sniper engine initialized.
+[2025-07-24 14:45:38] INFO:sniper: Sniper engine initialized.
+[2025-07-24 14:50:39] INFO:sniper: Sniper engine initialized.
+[2025-07-24 15:39:57] INFO:sniper: Sniper engine initialized.
+[2025-07-24 15:47:59] INFO:sniper: Sniper engine initialized.
+[2025-07-24 15:57:15] INFO:sniper: Sniper engine initialized.
+[2025-07-24 15:58:34] INFO:sniper: Sniper engine initialized.
+[2025-07-24 16:06:36] INFO:sniper: Sniper engine initialized.
+[2025-07-24 16:11:14] INFO:sniper: Sniper engine initialized.
+[2025-07-24 16:23:34] INFO:sniper: Sniper engine initialized.
+[2025-07-24 16:32:59] INFO:sniper: Sniper engine initialized.
+[2025-07-24 17:14:24] INFO:sniper: Sniper engine initialized.
+[2025-07-24 23:22:42] INFO:sniper: Sniper engine initialized.
+[2025-07-24 23:30:23] INFO:sniper: Sniper engine initialized.
+[2025-07-24 23:53:35] INFO:sniper: Sniper engine initialized.
+[2025-07-25 00:06:13] INFO:sniper: Sniper engine initialized.
+[2025-07-25 00:09:39] INFO:sniper: Sniper engine initialized.
+[2025-07-25 10:48:34] INFO:sniper: Sniper engine initialized.
+[2025-07-25 10:51:58] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:28:24] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:29:00] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:29:28] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:30:32] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:30:54] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:31:09] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:31:34] INFO:sniper: Sniper engine initialized.
+[2025-07-25 11:54:48] INFO:sniper: Sniper engine initialized.
+[2025-07-25 12:01:49] INFO:sniper: Sniper engine initialized.
+[2025-07-25 12:08:51] INFO:sniper: Sniper engine initialized.
+[2025-07-25 12:14:03] INFO:sniper: Sniper engine initialized.
+[2025-07-25 12:36:35] INFO:sniper: Sniper engine initialized.
+[2025-07-25 12:47:41] INFO:sniper: Sniper engine initialized.
+[2025-07-25 16:52:35] INFO:sniper: Sniper engine initialized.
+[2025-07-25 16:58:55] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:18:04] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:20:10] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:33:39] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:34:23] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:42:28] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:50:59] INFO:sniper: Sniper engine initialized.
+[2025-07-25 17:59:28] INFO:sniper: Sniper engine initialized.
+[2025-07-25 18:11:46] INFO:sniper: Sniper engine initialized.
+[2025-07-25 18:46:11] INFO:sniper: Sniper engine initialized.
+[2025-07-26 02:01:58] INFO:sniper: Sniper engine initialized.
+[2025-07-26 02:04:11] INFO:sniper: Sniper engine initialized.
+[2025-07-26 02:28:09] INFO:sniper: Sniper engine initialized.
+[2025-07-26 02:49:12] INFO:sniper: Sniper engine initialized.
+[2025-07-26 02:53:25] INFO:sniper: Sniper engine initialized.
+[2025-07-26 03:25:41] INFO:sniper: Sniper engine initialized.
+[2025-07-26 03:33:00] INFO:sniper: Sniper engine initialized.
+[2025-07-26 12:53:55] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:04:00] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:11:12] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:22:53] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:26:17] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:30:42] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:35:55] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:40:43] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:44:54] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:49:31] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:55:27] INFO:sniper: Sniper engine initialized.
+[2025-07-26 13:57:07] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:01:31] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:04:46] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:05:28] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:30:02] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:51:58] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:52:12] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:52:50] INFO:sniper: Sniper engine initialized.
+[2025-07-26 14:53:21] INFO:sniper: Sniper engine initialized.
+[2025-07-26 15:26:18] INFO:sniper: Sniper engine initialized.
+[2025-07-26 15:27:00] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:08:26] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:09:11] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:38:51] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:52:48] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:53:50] INFO:sniper: Sniper engine initialized.
+[2025-07-26 16:59:14] INFO:sniper: Sniper engine loaded.
+[2025-07-26 17:02:32] INFO:sniper: Sniper engine initialized.
+[2025-07-26 17:25:32] INFO:sniper: Sniper engine initialized.
+[2025-07-26 17:53:55] INFO:sniper: Sniper engine initialized.
+[2025-07-26 17:54:59] INFO:sniper: Sniper engine initialized.
+[2025-07-26 23:26:04] INFO:sniper: Sniper engine initialized.
+[2025-07-27 15:59:38] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:02:41] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:07:20] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:08:04] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:11:37] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:54:34] INFO:sniper: Sniper engine initialized.
+[2025-07-27 16:55:00] INFO:sniper: Sniper engine initialized.
+[2025-07-27 21:54:42] INFO:sniper: Sniper engine initialized.
+[2025-07-27 22:00:29] INFO:sniper: Sniper engine initialized.
+[2025-07-27 22:08:17] INFO:sniper: Sniper engine initialized.
+[2025-07-27 22:19:48] INFO:sniper: Sniper engine initialized.
+[2025-07-27 22:43:53] INFO:sniper: Sniper engine initialized.
+[2025-07-27 22:44:23] INFO:sniper: Sniper engine initialized.
+[2025-07-29 22:51:52] INFO:sniper: Sniper engine initialized.
+[2025-07-29 22:52:15] INFO:sniper: Sniper engine initialized.
+[2025-07-29 22:57:43] INFO:sniper: Sniper engine initialized.
+[2025-07-31 21:34:00] INFO:sniper: Sniper engine initialized.
+[2025-07-31 21:39:32] INFO:sniper: Sniper engine initialized.
+[2025-07-31 22:21:45] INFO:sniper: Sniper engine initialized.
+[2025-07-31 23:00:22] INFO:sniper: Sniper engine initialized.
+[2025-07-31 23:01:51] INFO:sniper: Sniper engine initialized.
+[2025-07-31 23:26:55] INFO:sniper: Sniper engine initialized.
+[2025-07-31 23:44:32] INFO:sniper: Sniper engine initialized.
+[2025-07-31 23:50:00] INFO:sniper: Sniper engine initialized.
+[2025-08-01 00:04:19] INFO:sniper: Sniper engine initialized.
+[2025-08-01 00:05:34] INFO:sniper: Sniper engine initialized.
+[2025-08-01 00:56:25] INFO:sniper: Sniper engine initialized.
+[2025-08-01 00:57:12] INFO:sniper: Sniper engine initialized.
+[2025-08-01 02:02:52] INFO:sniper: Sniper engine initialized.
+[2025-08-01 02:13:55] INFO:sniper: Sniper engine initialized.
+[2025-08-03 08:16:21] INFO:sniper: Sniper engine initialized.
+[2025-08-03 08:20:35] INFO:sniper: Sniper engine initialized.
+[2025-08-03 08:33:34] INFO:sniper: Sniper engine initialized.
+[2025-08-03 08:37:30] INFO:sniper: Sniper engine initialized.
+[2025-08-03 08:57:10] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:11:22] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:12:24] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:12:52] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:22:42] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:41:36] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:42:00] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:42:29] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:44:42] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:53:25] INFO:sniper: Sniper engine initialized.
+[2025-08-03 09:54:41] INFO:sniper: Sniper engine initialized.
+[2025-08-03 10:01:06] INFO:sniper: Sniper engine initialized.
+[2025-08-03 10:01:26] INFO:sniper: Sniper engine initialized.
+[2025-08-03 10:01:55] INFO:sniper: Sniper engine initialized.
+[2025-08-03 10:03:32] INFO:sniper: Sniper engine initialized.
+[2025-08-04 15:38:56] INFO:sniper: Sniper engine initialized.
+[2025-08-04 15:39:45] INFO:sniper: Sniper engine initialized.
+[2025-08-04 16:07:30] INFO:sniper: Sniper engine initialized.
+[2025-08-04 16:08:05] INFO:sniper: Sniper engine initialized.
+[2025-08-04 16:11:24] INFO:sniper: Sniper engine initialized.
+[2025-08-04 16:11:55] INFO:sniper: Sniper engine initialized.
+[2025-08-04 16:14:10] INFO:sniper: Sniper engine initialized.
+[2025-08-04 17:38:31] INFO:sniper: Sniper engine initialized.
+[2025-08-04 17:51:23] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:03:38] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:06:14] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:13:24] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:18:13] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:20:24] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:30:55] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:32:02] INFO:sniper: Sniper engine initialized.
+[2025-08-04 18:33:48] INFO:sniper: Sniper engine initialized.
+[2025-08-04 20:40:17] INFO:sniper: Sniper engine initialized.
+[2025-08-04 21:00:20] INFO:sniper: Sniper engine initialized.
+[2025-08-04 23:48:11] INFO:sniper: Sniper engine initialized.
+[2025-08-05 12:52:33] INFO:sniper: Sniper engine initialized.
+[2025-08-05 13:35:00] INFO:sniper: Sniper engine initialized.
+[2025-08-05 13:44:43] INFO:sniper: Sniper engine initialized.
+[2025-08-05 13:58:17] INFO:sniper: Sniper engine initialized.

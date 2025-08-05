@@ -4,7 +4,9 @@
   "min_roi": 1.25,
   "max_price_impact": 20,
   "min_liquidity_usd": 15000,
-  "social_score_min": 4,
-  "allow_non_renounced": false,
-  "flag_rugged_tokens": true
+  "min_social_score": 0,
+  "min_age_seconds": 0,
+  "require_renounced": false,
+  "max_rug_score": 0.25
 }
+

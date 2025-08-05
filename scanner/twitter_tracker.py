@@ -9,7 +9,7 @@ SEARCH_TERMS = [
     "DEXtools trending", "pair deployed", "#ERC20", "#memecoin"
 ]
 
-def scan_twitter_buzz(limit=50):
+def track_keywords(limit=50):
     """
     Scrapes recent crypto tweets for hype signals.
     Returns list of rough token candidates (parsed from tweet text).

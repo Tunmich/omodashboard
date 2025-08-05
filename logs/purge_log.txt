@@ -1,0 +1,33 @@
+
+--- Purge at 2025-07-17 10:37:33 ---
+Deleted: abis
+Deleted: alerts
+Deleted: config
+Deleted: dashboard
+Deleted: data
+Deleted: jobs
+Deleted: predictor
+Deleted: scanner
+Deleted: scheduler
+Deleted: strategy
+Deleted: tools
+Deleted: trading
+Deleted: triggers
+Deleted: utils
+Deleted: __pycache__
+Deleted: auto_trade.py
+Deleted: main.py
+Deleted: trade_test.py
+Deleted: health_check.py
+Deleted: healthy_rpcs.json
+Deleted: Dockerfile
+Deleted: terminal_log.txt
+Deleted: meme bot file list.txt
+Deleted: pl_simulated_results.json
+Deleted: pyproject.toml
+Deleted: run.sh
+Deleted: set_up.py
+Deleted: launch_env.sh
+Deleted: simulated_tokens.json
+Deleted: convert_keypair.py
+Backup: backups\purged_backup_20250717_103656.zip

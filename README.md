@@ -7,7 +7,7 @@ A fully automated, multi-chain meme token scanner and sniper bot with trading, d
 ## 🔧 Features
 
 - 💥 Scans Ethereum, BNB, Base & Solana
-- 📡 Filters tokens by safety, liquidity, buzz, risk
+- 📡 filters tokens by safety, liquidity, buzz, risk
 - 🤖 Auto-trades tokens with real wallet integration
 - 🧠 ROI prediction + Profit/Loss tracking
 - 📊 Streamlit dashboard with leaderboards & strategy analytics

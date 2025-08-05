@@ -1,0 +1,825 @@
+2025-07-23 23:53:02,053 [INFO] Sniper engine initialized.
+2025-07-23 23:53:34,387 [INFO] Sniper engine initialized.
+2025-07-23 23:56:03,848 [INFO] Sniper engine initialized.
+2025-07-23 23:56:44,646 [INFO] Sniper engine initialized.
+2025-07-23 23:57:15,172 [INFO] Sniper engine initialized.
+2025-07-23 23:57:37,169 [INFO] Sniper engine initialized.
+2025-07-23 23:58:32,241 [INFO] Sniper engine initialized.
+2025-07-24 00:10:34,639 [INFO] Sniper engine initialized.
+2025-07-24 11:18:30,822 [INFO] Sniper engine initialized.
+2025-07-26 02:01:58,324 [INFO] Sniper engine initialized.
+2025-07-26 02:27:51,616 [INFO] \u2705 strategy.trade_decision_engine.should_buy initialized
+2025-07-26 02:27:55,013 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price initialized
+2025-07-26 02:27:55,013 [INFO] \u2705 utils.telegram_alert.send_trade_alert initialized
+2025-07-26 02:28:08,582 [INFO] \u2705 modules.solana_executor.buy_token_solana initialized
+2025-07-26 02:28:09,116 [INFO] Sniper engine initialized.
+2025-07-26 02:28:09,132 [ERROR] \u274c modules.sniper_engine.scan_and_snipe failed: module 'modules.sniper_engine' has no attribute 'scan_and_snipe'
+2025-07-26 02:28:10,544 [ERROR] \u274c scanner.twitter_tracker.track_keywords failed: module 'scanner.twitter_tracker' has no attribute 'track_keywords'
+2025-07-26 02:28:11,031 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 02:28:16,669 [ERROR] \u274c intel_listener.TelegramListener failed: module 'intel_listener' has no attribute 'TelegramListener'
+2025-07-26 02:28:20,850 [ERROR] \u274c intel_patrol.PatrolManager failed: module 'intel_patrol' has no attribute 'PatrolManager'
+2025-07-26 02:28:25,495 [ERROR] \u274c intel_engine.HeartbeatMonitor failed: module 'intel_engine' has no attribute 'HeartbeatMonitor'
+2025-07-26 02:28:25,495 [INFO] \U0001f9e0 CPU: 11.7%, Memory: 91.3%
+2025-07-26 02:49:00,851 [ERROR] \u274c strategy.trade_decision_engine.should_buy failed: should_buy() missing 1 required positional argument: 'token'
+2025-07-26 02:49:04,306 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price healthy
+2025-07-26 02:49:04,322 [ERROR] \u274c utils.telegram_alert.send_trade_alert failed: send_trade_alert() missing 3 required positional arguments: 'token_name', 'chain', and 'tx_link'
+2025-07-26 02:49:12,345 [ERROR] \u274c modules.solana_executor.buy_token_solana failed: buy_token_solana() missing 3 required positional arguments: 'mint_address', 'amount_sol', and 'wallet'
+2025-07-26 02:49:12,760 [INFO] Sniper engine initialized.
+2025-07-26 02:49:12,768 [ERROR] \u274c modules.sniper_engine.scan_and_snipe failed: module 'modules.sniper_engine' has no attribute 'scan_and_snipe'
+2025-07-26 02:49:14,051 [ERROR] \u274c scanner.twitter_tracker.track_keywords failed: module 'scanner.twitter_tracker' has no attribute 'track_keywords'
+2025-07-26 02:49:14,704 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 02:49:20,935 [ERROR] \u274c intel_listener.TelegramListener failed: module 'intel_listener' has no attribute 'TelegramListener'
+2025-07-26 02:49:25,287 [ERROR] \u274c intel_patrol.PatrolManager failed: module 'intel_patrol' has no attribute 'PatrolManager'
+2025-07-26 02:49:29,780 [ERROR] \u274c intel_engine.HeartbeatMonitor failed: module 'intel_engine' has no attribute 'HeartbeatMonitor'
+2025-07-26 02:49:29,795 [INFO] \U0001f9e0 CPU: 8.8%, Memory: 89.3%
+2025-07-26 02:53:23,116 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 02:53:24,043 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 02:53:24,043 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 02:53:25,144 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 02:53:25,262 [INFO] Sniper engine initialized.
+2025-07-26 02:53:25,262 [ERROR] \u274c modules.sniper_engine.scan_and_snipe missing
+2025-07-26 02:53:25,616 [ERROR] \u274c scanner.twitter_tracker.track_keywords missing
+2025-07-26 02:53:25,680 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 02:53:26,876 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 02:53:28,763 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 02:53:29,801 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 02:53:29,816 [INFO] \U0001f9e0 CPU: 25.7%, Memory: 89.9%
+2025-07-26 03:03:51,482 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 03:03:52,690 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 03:03:52,690 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 03:03:52,705 [ERROR] \u274c Import failed for modules.solana_executor: No module named 'modules.scanner'
+2025-07-26 03:03:52,768 [ERROR] \u274c Import failed for modules.sniper_engine: No module named 'modules.scanner'
+2025-07-26 03:03:53,259 [ERROR] \u274c Import failed for scanner.twitter_tracker: cannot import name 'track_keywords' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 03:03:53,372 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 03:03:54,785 [ERROR] \u274c Import failed for intel_listener: No module named 'modules.scanner'
+2025-07-26 03:03:56,067 [ERROR] \u274c Import failed for intel_patrol: No module named 'modules.scanner'
+2025-07-26 03:03:56,091 [ERROR] \u274c Import failed for intel_engine: No module named 'modules.scanner'
+2025-07-26 03:03:56,091 [INFO] \U0001f9e0 CPU: 33.3%, Memory: 89.0%
+2025-07-26 03:25:16,196 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 03:25:23,239 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 03:25:23,239 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 03:25:40,079 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 03:25:41,313 [INFO] Sniper engine initialized.
+2025-07-26 03:25:41,421 [ERROR] \u274c modules.sniper_engine.scan_and_snipe missing
+2025-07-26 03:25:44,675 [ERROR] \u274c scanner.twitter_tracker.track_keywords missing
+2025-07-26 03:25:47,388 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 03:26:05,836 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 03:26:17,574 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 03:26:34,765 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 03:26:34,796 [INFO] \U0001f9e0 CPU: 9.2%, Memory: 91.0%
+2025-07-26 12:53:40,194 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 12:53:43,547 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 12:53:43,547 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 12:53:54,810 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 12:53:55,407 [INFO] Sniper engine initialized.
+2025-07-26 12:53:55,423 [ERROR] \u274c modules.sniper_engine.scan_and_snipe missing
+2025-07-26 12:53:56,933 [ERROR] \u274c scanner.twitter_tracker.track_keywords missing
+2025-07-26 12:53:57,688 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 12:54:04,496 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 12:54:10,148 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 12:54:19,185 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 12:54:19,189 [INFO] \U0001f9e0 CPU: 13.5%, Memory: 87.2%
+2025-07-26 13:03:50,514 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:03:54,252 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:03:54,252 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:04:00,129 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:04:00,678 [INFO] Sniper engine initialized.
+2025-07-26 13:04:00,694 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:04:02,061 [ERROR] \u274c scanner.twitter_tracker.track_keywords missing
+2025-07-26 13:04:02,705 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:04:08,021 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 13:04:12,233 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 13:04:16,301 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 13:04:16,316 [INFO] \U0001f9e0 CPU: 17.8%, Memory: 93.2%
+2025-07-26 13:11:05,684 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:11:07,631 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:11:07,631 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:11:12,093 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:11:12,455 [INFO] Sniper engine initialized.
+2025-07-26 13:11:12,455 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:11:13,159 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:11:13,307 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:11:15,182 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 13:11:18,408 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 13:11:19,377 [ERROR] \u274c Import failed for intel_engine: cannot import name 'scan_twitter_buzz' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 13:11:19,382 [INFO] \U0001f9e0 CPU: 25.6%, Memory: 90.1%
+2025-07-26 13:22:51,080 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:22:52,180 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:22:52,180 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:22:53,423 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:22:53,501 [INFO] Sniper engine initialized.
+2025-07-26 13:22:53,501 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:22:53,966 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:22:54,052 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:22:55,451 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-07-26 13:22:58,133 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 13:22:59,111 [ERROR] \u274c Import failed for intel_engine: cannot import name 'scan_twitter_buzz' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 13:22:59,127 [INFO] \U0001f9e0 CPU: 26.9%, Memory: 91.7%
+2025-07-26 13:26:14,908 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:26:16,060 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:26:16,060 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:26:17,345 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:26:17,454 [INFO] Sniper engine initialized.
+2025-07-26 13:26:17,454 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:26:17,815 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:26:17,956 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:26:19,289 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:26:21,217 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-07-26 13:26:22,220 [ERROR] \u274c Import failed for intel_engine: cannot import name 'scan_twitter_buzz' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 13:26:22,220 [INFO] \U0001f9e0 CPU: 28.9%, Memory: 92.1%
+2025-07-26 13:30:39,870 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:30:40,972 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:30:40,972 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:30:42,263 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:30:42,357 [INFO] Sniper engine initialized.
+2025-07-26 13:30:42,357 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:30:42,734 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:30:42,986 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:30:44,308 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:30:46,402 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:30:47,470 [ERROR] \u274c Import failed for intel_engine: cannot import name 'scan_twitter_buzz' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 13:30:47,477 [INFO] \U0001f9e0 CPU: 29.5%, Memory: 91.9%
+2025-07-26 13:35:50,303 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:35:51,449 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:35:51,449 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:35:55,333 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:35:55,601 [INFO] Sniper engine initialized.
+2025-07-26 13:35:55,617 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:35:56,339 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:35:56,781 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:36:01,523 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:36:06,465 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:36:09,233 [ERROR] \u274c Import failed for intel_engine: cannot import name 'scan_twitter_buzz' from 'scanner.twitter_tracker' (C:\Users\segun\Desktop\Projects\Meme_bot\scanner\twitter_tracker.py)
+2025-07-26 13:36:09,233 [INFO] \U0001f9e0 CPU: 21.3%, Memory: 90.0%
+2025-07-26 13:40:40,801 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:40:41,838 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:40:41,838 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:40:43,160 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:40:43,238 [INFO] Sniper engine initialized.
+2025-07-26 13:40:43,238 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:40:43,604 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:40:43,681 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:40:45,000 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:40:46,748 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:40:47,833 [ERROR] \u274c Import failed for intel_engine: cannot import name 'client_runner' from 'intel_listener' (C:\Users\segun\Desktop\Projects\Meme_bot\intel_listener.py)
+2025-07-26 13:40:47,833 [INFO] \U0001f9e0 CPU: 28.0%, Memory: 89.1%
+2025-07-26 13:44:52,401 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:44:53,488 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:44:53,488 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:44:54,762 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:44:54,840 [INFO] Sniper engine initialized.
+2025-07-26 13:44:54,840 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:44:55,233 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:44:55,296 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:44:56,648 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:44:58,800 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:44:59,929 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 13:44:59,945 [INFO] \U0001f9e0 CPU: 27.7%, Memory: 89.9%
+2025-07-26 13:49:28,771 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:49:29,789 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:49:29,789 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:49:31,091 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:49:31,185 [INFO] Sniper engine initialized.
+2025-07-26 13:49:31,185 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:49:31,577 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:49:31,639 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:49:33,096 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:49:35,134 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:49:36,326 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 13:49:36,342 [INFO] \U0001f9e0 CPU: 31.6%, Memory: 91.1%
+2025-07-26 13:55:25,106 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:55:26,204 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:55:26,204 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:55:27,504 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:55:27,646 [INFO] Sniper engine initialized.
+2025-07-26 13:55:27,646 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:55:28,084 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:55:28,148 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:55:29,526 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:55:32,032 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:55:33,566 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 13:55:33,566 [INFO] \U0001f9e0 CPU: 32.9%, Memory: 90.6%
+2025-07-26 13:57:04,691 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 13:57:05,723 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 13:57:05,723 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 13:57:07,008 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 13:57:07,086 [INFO] Sniper engine initialized.
+2025-07-26 13:57:07,086 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 13:57:07,540 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 13:57:07,603 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 13:57:08,964 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 13:57:10,752 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 13:57:11,944 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-07-26 13:57:11,959 [INFO] \U0001f9e0 CPU: 30.8%, Memory: 91.4%
+2025-07-26 14:01:29,564 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 14:01:30,597 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 14:01:30,597 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 14:01:31,865 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 14:01:31,944 [INFO] Sniper engine initialized.
+2025-07-26 14:01:31,959 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 14:01:32,351 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 14:01:32,429 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 14:01:33,761 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 14:01:36,250 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 14:01:36,423 [ERROR] \u274c Import failed for intel_engine: invalid character '\u2705' (U+2705) (intel_engine.py, line 122)
+2025-07-26 14:01:36,423 [INFO] \U0001f9e0 CPU: 28.6%, Memory: 91.2%
+2025-07-26 14:04:43,995 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 14:04:45,015 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 14:04:45,015 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 14:04:46,268 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 14:04:46,346 [INFO] Sniper engine initialized.
+2025-07-26 14:04:46,361 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 14:04:46,754 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 14:04:46,848 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 14:04:48,149 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 14:04:50,240 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 14:04:51,243 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 14:04:51,258 [INFO] \U0001f9e0 CPU: 29.6%, Memory: 92.5%
+2025-07-26 14:52:10,329 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 14:52:11,490 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 14:52:11,490 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 14:52:12,719 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 14:52:12,816 [INFO] Sniper engine initialized.
+2025-07-26 14:52:12,816 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 14:52:13,174 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 14:52:13,252 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 14:52:14,578 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 14:52:17,046 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 14:52:18,192 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 14:52:18,208 [INFO] \U0001f9e0 CPU: 28.1%, Memory: 91.0%
+2025-07-26 14:52:48,252 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 14:52:49,307 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 14:52:49,307 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 14:52:50,614 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 14:52:50,773 [INFO] Sniper engine initialized.
+2025-07-26 14:52:50,774 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 14:52:51,246 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 14:52:51,308 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 14:52:52,618 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 14:52:54,696 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 14:52:55,738 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 14:52:55,754 [INFO] \U0001f9e0 CPU: 29.1%, Memory: 90.7%
+2025-07-26 15:26:09,355 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 15:26:11,995 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 15:26:11,995 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 15:26:18,078 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 15:26:18,502 [INFO] Sniper engine initialized.
+2025-07-26 15:26:18,518 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 15:26:19,996 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 15:26:23,021 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 15:26:28,573 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 15:26:38,083 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 15:26:43,266 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 15:26:43,274 [INFO] \U0001f9e0 CPU: 17.5%, Memory: 86.1%
+2025-07-26 16:08:17,072 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 16:08:19,764 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 16:08:19,764 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 16:08:25,833 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 16:08:26,811 [INFO] Sniper engine initialized.
+2025-07-26 16:08:26,826 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 16:08:28,307 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 16:08:31,442 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 16:08:37,091 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 16:08:44,641 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 16:08:48,927 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 16:08:48,933 [INFO] \U0001f9e0 CPU: 18.7%, Memory: 82.5%
+2025-07-26 16:52:40,220 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 16:52:43,648 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 16:52:43,648 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 16:52:48,194 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 16:52:48,634 [INFO] Sniper engine initialized.
+2025-07-26 16:52:48,634 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 16:52:51,468 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 16:52:57,266 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 16:53:08,899 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 16:53:19,257 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 16:53:25,689 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 16:53:25,720 [INFO] \U0001f9e0 CPU: 16.1%, Memory: 92.0%
+2025-07-26 16:58:47,113 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 16:58:53,897 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 16:58:53,897 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 16:59:14,436 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 16:59:14,907 [INFO] Sniper engine loaded.
+2025-07-26 16:59:14,907 [ERROR] \u274c modules.sniper_engine.scan_and_snipe missing
+2025-07-26 16:59:17,722 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 16:59:26,953 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 16:59:32,284 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 16:59:40,978 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 16:59:46,343 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 16:59:46,359 [INFO] \U0001f9e0 CPU: 14.6%, Memory: 90.4%
+2025-07-26 17:02:22,109 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 17:02:24,453 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 17:02:24,453 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 17:02:31,611 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 17:02:32,194 [INFO] Sniper engine initialized.
+2025-07-26 17:02:32,202 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 17:02:33,515 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 17:02:34,049 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 17:02:39,537 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 17:02:45,246 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 17:02:49,461 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 17:02:49,476 [INFO] \U0001f9e0 CPU: 14.2%, Memory: 87.2%
+2025-07-26 17:23:41,123 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 17:23:46,943 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 17:23:46,943 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 17:24:39,698 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 17:25:32,365 [INFO] Sniper engine initialized.
+2025-07-26 17:25:32,365 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 17:25:34,382 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 17:25:41,322 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 17:25:48,349 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 17:25:58,575 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 17:25:59,251 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 17:25:59,268 [INFO] \U0001f9e0 CPU: 17.2%, Memory: 86.2%
+2025-07-26 17:52:36,582 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-26 17:52:48,756 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-26 17:52:48,756 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-26 17:53:25,117 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-26 17:53:55,092 [INFO] Sniper engine initialized.
+2025-07-26 17:53:55,092 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-26 17:53:58,018 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-26 17:54:09,763 [INFO] cryptg detected, it will be used for encryption
+2025-07-26 17:54:18,027 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-26 17:54:30,040 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-26 17:54:30,781 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-26 17:54:30,792 [INFO] \U0001f9e0 CPU: 18.6%, Memory: 83.5%
+2025-07-27 15:58:35,342 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 15:58:38,238 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 15:58:38,238 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 15:58:54,388 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 15:59:38,952 [INFO] Sniper engine initialized.
+2025-07-27 15:59:38,983 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 15:59:42,064 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 15:59:44,595 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 15:59:53,513 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 15:59:59,912 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:00:00,210 [ERROR] \u274c Import failed for intel_engine: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:00:00,210 [INFO] \U0001f9e0 CPU: 8.3%, Memory: 93.6%
+2025-07-27 16:02:26,088 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:02:27,970 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:02:27,970 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:02:32,475 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:02:41,698 [INFO] Sniper engine initialized.
+2025-07-27 16:02:41,698 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 16:02:42,075 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:02:42,169 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:02:42,937 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:02:45,117 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:02:45,274 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:02:45,289 [INFO] \U0001f9e0 CPU: 7.8%, Memory: 89.0%
+2025-07-27 16:07:14,047 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:07:15,258 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:07:15,258 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:07:16,706 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:07:20,171 [INFO] Sniper engine initialized.
+2025-07-27 16:07:20,171 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 16:07:20,670 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:07:20,733 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:07:21,738 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:07:23,095 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:07:23,173 [ERROR] \u274c Import failed for intel_engine: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:07:23,179 [INFO] \U0001f9e0 CPU: 47.5%, Memory: 87.5%
+2025-07-27 16:07:59,423 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:08:00,369 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:08:00,369 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:08:01,501 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:08:04,321 [INFO] Sniper engine initialized.
+2025-07-27 16:08:04,336 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 16:08:04,776 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:08:04,839 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:08:05,701 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:08:06,724 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:08:06,771 [ERROR] \u274c Import failed for intel_engine: cannot import name 'get_trade_allocation' from 'strategy.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\strategy\budget_manager.py)
+2025-07-27 16:08:06,786 [INFO] \U0001f9e0 CPU: 35.8%, Memory: 86.4%
+2025-07-27 16:11:31,193 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:11:32,356 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:11:32,356 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:11:34,100 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:11:37,724 [INFO] Sniper engine initialized.
+2025-07-27 16:11:37,724 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 16:11:38,366 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:11:38,460 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:11:39,557 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:11:41,712 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:11:41,852 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:11:41,868 [INFO] \U0001f9e0 CPU: 53.7%, Memory: 89.7%
+2025-07-27 16:35:32,483 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:35:33,818 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:35:33,818 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:35:39,819 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:35:39,835 [ERROR] \u274c Import failed for modules.sniper_engine: unterminated string literal (detected at line 241) (sniper_engine.py, line 241)
+2025-07-27 16:35:41,202 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:35:41,673 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:35:48,093 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:35:52,805 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:35:57,281 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:35:57,281 [INFO] \U0001f9e0 CPU: 7.9%, Memory: 90.7%
+2025-07-27 16:40:41,523 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:40:42,686 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:40:42,686 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:40:44,290 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:40:44,384 [ERROR] \u274c Import failed for modules.sniper_engine: expected 'except' or 'finally' block (sniper_engine.py, line 243)
+2025-07-27 16:40:44,825 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:40:44,889 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:40:46,102 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:40:48,067 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:40:48,961 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:40:48,961 [INFO] \U0001f9e0 CPU: 17.9%, Memory: 91.6%
+2025-07-27 16:43:33,349 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:43:35,619 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:43:35,619 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:43:41,234 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:43:41,282 [ERROR] \u274c modules.sniper_engine.scan_and_snipe missing
+2025-07-27 16:43:42,554 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:43:43,012 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:43:48,741 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:43:53,212 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:43:58,461 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:43:58,476 [INFO] \U0001f9e0 CPU: 8.0%, Memory: 91.9%
+2025-07-27 16:48:59,011 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:49:00,096 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:49:00,096 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:49:01,355 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:49:32,541 [ERROR] \u274c Import failed for modules.sniper_engine: cannot import name 'get_sol_trade_allocation' from 'utils.budget_manager' (C:\Users\segun\Desktop\Projects\Meme_bot\utils\budget_manager.py)
+2025-07-27 16:49:32,982 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:49:33,107 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:49:33,944 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:49:35,855 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:49:35,950 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:49:35,965 [INFO] \U0001f9e0 CPU: 12.5%, Memory: 86.1%
+2025-07-27 16:54:29,467 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 16:54:30,393 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 16:54:30,393 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 16:54:31,538 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 16:54:34,472 [INFO] Sniper engine initialized.
+2025-07-27 16:54:34,472 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 16:54:34,990 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 16:54:35,053 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 16:54:35,808 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 16:54:37,631 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 16:54:37,725 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 16:54:37,741 [INFO] \U0001f9e0 CPU: 24.4%, Memory: 88.7%
+2025-07-27 21:54:07,872 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 21:54:09,380 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 21:54:09,380 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 21:54:18,652 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 21:54:42,672 [INFO] Sniper engine initialized.
+2025-07-27 21:54:42,692 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 21:54:44,637 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 21:54:45,361 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 21:54:50,327 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 21:54:56,500 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 21:54:57,002 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 21:54:57,097 [INFO] \U0001f9e0 CPU: 7.4%, Memory: 90.5%
+2025-07-27 22:43:15,961 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-27 22:43:17,827 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-27 22:43:17,827 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-27 22:43:25,739 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-27 22:43:53,399 [INFO] Sniper engine initialized.
+2025-07-27 22:43:53,399 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-27 22:43:56,017 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-27 22:43:57,456 [INFO] cryptg detected, it will be used for encryption
+2025-07-27 22:44:03,406 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-27 22:44:08,355 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-27 22:44:08,916 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-27 22:44:08,926 [INFO] \U0001f9e0 CPU: 12.6%, Memory: 86.5%
+2025-07-29 22:43:26,247 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-29 22:43:30,307 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-29 22:43:30,307 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-29 22:45:03,387 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-29 22:51:52,928 [INFO] Sniper engine initialized.
+2025-07-29 22:51:53,021 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-29 22:51:55,159 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-29 22:52:50,219 [INFO] cryptg detected, it will be used for encryption
+2025-07-29 22:52:54,057 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-29 22:54:20,307 [ERROR] \u274c Import failed for intel_patrol: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=solana&vs_currencies=usd (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002865D517BD0>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-29 22:54:20,365 [ERROR] \u274c Import failed for intel_engine: HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/simple/price?ids=solana&vs_currencies=usd (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002865D6A2AD0>: Failed to resolve 'api.coingecko.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-29 22:54:20,370 [INFO] \U0001f9e0 CPU: 9.1%, Memory: 73.0%
+2025-07-31 21:31:28,609 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 21:31:31,187 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 21:31:31,187 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 21:31:41,229 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 21:34:00,043 [INFO] Sniper engine initialized.
+2025-07-31 21:34:00,122 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 21:34:07,430 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 21:34:36,327 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 21:34:39,484 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 21:37:05,510 [ERROR] \u274c Import failed for intel_patrol: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-07-31 21:37:29,922 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-31 21:37:29,941 [INFO] \U0001f9e0 CPU: 10.9%, Memory: 94.7%
+2025-07-31 21:38:36,541 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 21:38:38,842 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 21:38:38,842 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 21:38:44,524 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 21:39:32,568 [INFO] Sniper engine initialized.
+2025-07-31 21:39:32,574 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 21:39:33,592 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 21:39:33,959 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 21:39:36,009 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 22:21:14,623 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 22:21:17,069 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 22:21:17,069 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 22:21:25,789 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 22:21:45,513 [INFO] Sniper engine initialized.
+2025-07-31 22:21:45,513 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 22:21:46,774 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 22:21:47,650 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 22:21:51,304 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 22:22:13,579 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-31 22:22:14,237 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-31 22:22:14,253 [INFO] \U0001f9e0 CPU: 11.4%, Memory: 86.1%
+2025-07-31 22:59:54,704 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 22:59:59,087 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 22:59:59,087 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 23:00:06,143 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 23:00:22,320 [INFO] Sniper engine initialized.
+2025-07-31 23:00:22,337 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 23:00:23,486 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 23:00:24,022 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 23:00:26,655 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 23:00:30,722 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-31 23:00:30,957 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-07-31 23:00:30,971 [INFO] \U0001f9e0 CPU: 22.7%, Memory: 89.6%
+2025-07-31 23:23:19,197 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 23:23:39,505 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 23:23:39,505 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 23:24:36,271 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 23:26:55,231 [INFO] Sniper engine initialized.
+2025-07-31 23:26:55,293 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 23:27:00,303 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 23:27:04,343 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 23:27:29,807 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 23:27:41,964 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'LAST_TRACE' from 'strategy.trade_decision_engine' (C:\Users\segun\Desktop\Projects\Meme_bot1\strategy\trade_decision_engine.py)
+2025-07-31 23:27:42,741 [ERROR] \u274c Import failed for intel_engine: cannot import name 'LAST_TRACE' from 'strategy.trade_decision_engine' (C:\Users\segun\Desktop\Projects\Meme_bot1\strategy\trade_decision_engine.py)
+2025-07-31 23:27:42,776 [INFO] \U0001f9e0 CPU: 11.1%, Memory: 90.3%
+2025-07-31 23:44:05,079 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-07-31 23:44:10,250 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-07-31 23:44:10,250 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-07-31 23:44:17,514 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-07-31 23:44:32,829 [INFO] Sniper engine initialized.
+2025-07-31 23:44:32,845 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-07-31 23:44:33,531 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-07-31 23:44:37,874 [INFO] cryptg detected, it will be used for encryption
+2025-07-31 23:44:43,050 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-07-31 23:44:48,661 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-07-31 23:44:49,098 [ERROR] \u274c Import failed for intel_engine: cannot import name 'evaluate_signal' from 'strategy.trade_decision_engine' (C:\Users\segun\Desktop\Projects\Meme_bot1\strategy\trade_decision_engine.py)
+2025-07-31 23:44:49,130 [INFO] \U0001f9e0 CPU: 14.7%, Memory: 91.2%
+2025-08-01 00:03:04,472 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-01 00:03:06,428 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-01 00:03:06,428 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-01 00:03:10,992 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-01 00:04:19,245 [INFO] Sniper engine initialized.
+2025-08-01 00:04:19,427 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-01 00:04:23,933 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-01 00:04:25,074 [INFO] cryptg detected, it will be used for encryption
+2025-08-01 00:04:35,624 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-01 00:04:52,990 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-01 00:04:53,868 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-01 00:04:53,899 [INFO] \U0001f9e0 CPU: 9.0%, Memory: 87.6%
+2025-08-01 00:55:53,034 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-01 00:55:55,019 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-01 00:55:55,034 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-01 00:56:00,301 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-01 00:56:25,448 [INFO] Sniper engine initialized.
+2025-08-01 00:56:25,463 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-01 00:56:26,651 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-01 00:56:27,167 [INFO] cryptg detected, it will be used for encryption
+2025-08-01 00:56:30,714 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-01 00:56:40,581 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-01 00:56:40,816 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-01 00:56:40,847 [INFO] \U0001f9e0 CPU: 7.9%, Memory: 90.4%
+2025-08-01 02:01:03,402 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-01 02:01:10,451 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-01 02:01:10,451 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-01 02:01:40,624 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-01 02:02:52,088 [INFO] Sniper engine initialized.
+2025-08-01 02:02:52,104 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-01 02:02:53,794 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-01 02:02:54,951 [INFO] cryptg detected, it will be used for encryption
+2025-08-01 02:03:07,311 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-01 02:03:12,379 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-01 02:03:16,630 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-01 02:03:16,657 [INFO] \U0001f9e0 CPU: 18.9%, Memory: 87.3%
+2025-08-03 08:08:21,749 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 08:08:42,198 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 08:08:42,198 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 08:10:21,199 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 08:16:21,355 [INFO] Sniper engine initialized.
+2025-08-03 08:16:21,371 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 08:16:48,655 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 08:17:09,684 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 08:18:09,318 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 08:18:27,907 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:18:30,635 [ERROR] \u274c Import failed for intel_engine: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:18:30,769 [INFO] \U0001f9e0 CPU: 15.5%, Memory: 96.1%
+2025-08-03 08:19:52,626 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 08:19:56,259 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 08:19:56,259 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 08:20:03,195 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 08:20:35,742 [INFO] Sniper engine initialized.
+2025-08-03 08:20:35,742 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 08:20:36,986 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 08:20:37,756 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 08:20:40,763 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 08:20:41,455 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:20:41,502 [ERROR] \u274c Import failed for intel_engine: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:20:41,517 [INFO] \U0001f9e0 CPU: 6.9%, Memory: 89.9%
+2025-08-03 08:33:09,537 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 08:33:10,969 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 08:33:10,969 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 08:33:14,930 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 08:33:34,307 [INFO] Sniper engine initialized.
+2025-08-03 08:33:34,354 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 08:33:35,124 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 08:33:35,799 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 08:33:41,047 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 08:33:44,077 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:33:44,300 [ERROR] \u274c Import failed for intel_engine: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:33:44,331 [INFO] \U0001f9e0 CPU: 7.3%, Memory: 91.3%
+2025-08-03 08:37:15,572 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 08:37:16,875 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 08:37:16,875 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 08:37:17,992 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 08:37:30,613 [INFO] Sniper engine initialized.
+2025-08-03 08:37:30,628 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 08:37:31,335 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 08:37:31,680 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 08:37:33,430 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 08:37:39,557 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:37:39,949 [ERROR] \u274c Import failed for intel_engine: cannot import name 'filters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:37:39,965 [INFO] \U0001f9e0 CPU: 10.9%, Memory: 91.2%
+2025-08-03 08:56:32,060 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 08:56:33,882 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 08:56:33,882 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 08:56:42,443 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 08:57:10,110 [INFO] Sniper engine initialized.
+2025-08-03 08:57:10,126 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 08:57:11,273 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 08:57:11,713 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 08:57:16,426 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 08:57:20,276 [ERROR] \u274c Import failed for intel_patrol: cannot import name 'filtersilters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:57:20,779 [ERROR] \u274c Import failed for intel_engine: cannot import name 'filtersilters' from 'telegram.ext' (C:\Users\segun\Desktop\Projects\Meme_bot1\.venv\Lib\site-packages\telegram\ext\__init__.py)
+2025-08-03 08:57:20,810 [INFO] \U0001f9e0 CPU: 31.4%, Memory: 87.2%
+2025-08-03 09:10:49,025 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 09:10:51,229 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 09:10:51,229 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 09:10:57,320 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 09:11:22,461 [INFO] Sniper engine initialized.
+2025-08-03 09:11:22,461 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 09:11:23,439 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 09:11:24,326 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 09:11:29,644 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 09:11:35,974 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-03 09:11:36,080 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-03 09:11:36,080 [INFO] \U0001f9e0 CPU: 6.6%, Memory: 80.1%
+2025-08-03 09:41:29,092 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 09:41:30,504 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 09:41:30,504 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 09:41:31,649 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 09:41:36,881 [INFO] Sniper engine initialized.
+2025-08-03 09:41:36,893 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 09:41:37,472 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 09:41:37,702 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 09:41:39,177 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 09:41:42,093 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-03 09:41:42,266 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-03 09:41:42,297 [INFO] \U0001f9e0 CPU: 13.8%, Memory: 86.3%
+2025-08-03 10:00:48,605 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-03 10:00:49,877 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-03 10:00:49,877 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-03 10:00:54,548 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-03 10:01:06,187 [INFO] Sniper engine initialized.
+2025-08-03 10:01:06,187 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-03 10:01:06,913 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-03 10:01:08,266 [INFO] cryptg detected, it will be used for encryption
+2025-08-03 10:01:09,446 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-03 10:01:11,714 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-03 10:01:11,809 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-03 10:01:11,809 [INFO] \U0001f9e0 CPU: 18.1%, Memory: 86.8%
+2025-08-04 15:38:26,301 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 15:38:29,017 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 15:38:29,017 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 15:38:34,062 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 15:38:56,373 [INFO] Sniper engine initialized.
+2025-08-04 15:38:56,389 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 15:38:58,114 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 15:38:58,600 [INFO] cryptg detected, it will be used for encryption
+2025-08-04 15:39:02,066 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 15:39:10,705 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 15:39:11,082 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-04 15:39:11,082 [INFO] \U0001f9e0 CPU: 10.2%, Memory: 91.3%
+2025-08-04 16:07:09,029 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 16:07:10,364 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 16:07:10,364 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 16:07:13,904 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 16:07:30,991 [INFO] Sniper engine initialized.
+2025-08-04 16:07:31,006 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 16:07:32,186 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 16:07:32,595 [INFO] cryptg detected, it will be used for encryption
+2025-08-04 16:07:35,113 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 16:07:38,533 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 16:07:38,870 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-04 16:07:38,874 [INFO] \U0001f9e0 CPU: 6.6%, Memory: 87.0%
+2025-08-04 16:11:19,528 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 16:11:20,660 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 16:11:20,667 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 16:11:21,460 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 16:11:24,155 [INFO] Sniper engine initialized.
+2025-08-04 16:11:24,155 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 16:11:24,546 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 16:11:24,656 [INFO] cryptg detected, it will be used for encryption
+2025-08-04 16:11:25,498 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 16:11:26,522 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 16:11:26,632 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-08-04 16:11:26,632 [INFO] \U0001f9e0 CPU: 26.9%, Memory: 87.6%
+2025-08-04 16:14:05,892 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 16:14:06,910 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 16:14:06,910 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 16:14:07,787 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 16:14:10,629 [INFO] Sniper engine initialized.
+2025-08-04 16:14:10,629 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 16:14:11,030 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 16:14:11,078 [INFO] cryptg detected, it will be used for encryption
+2025-08-04 16:14:11,862 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 16:14:15,989 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 16:14:16,099 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-04 16:14:16,114 [INFO] \U0001f9e0 CPU: 25.7%, Memory: 86.8%
+2025-08-04 17:49:43,633 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 17:49:48,661 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 17:49:48,661 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 17:50:03,228 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 17:51:23,657 [INFO] Sniper engine initialized.
+2025-08-04 17:51:23,683 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 17:51:27,693 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 17:51:29,110 [INFO] Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-08-04 17:51:29,270 [INFO] cryptg detected, it will be used for encryption
+2025-08-04 17:51:48,672 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 17:51:48,692 [ERROR] \u274c Import failed for intel_patrol: No module named 'intel_patrol'
+2025-08-04 17:51:48,701 [ERROR] \u274c Import failed for intel_engine: No module named 'intel_engine'
+2025-08-04 17:51:48,735 [INFO] \U0001f9e0 CPU: 14.7%, Memory: 93.0%
+2025-08-04 18:03:33,338 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:03:34,310 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:03:34,310 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:03:35,158 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:03:38,146 [INFO] Sniper engine initialized.
+2025-08-04 18:03:38,147 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:03:38,590 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:03:38,621 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-08-04 18:03:38,655 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-08-04 18:03:38,675 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-08-04 18:03:38,682 [INFO] \U0001f9e0 CPU: 24.4%, Memory: 84.0%
+2025-08-04 18:06:02,101 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:06:03,183 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:06:03,183 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:06:05,767 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:06:14,893 [INFO] Sniper engine initialized.
+2025-08-04 18:06:14,893 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:06:15,740 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:06:15,798 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-08-04 18:06:15,807 [ERROR] \u274c intel_patrol.PatrolManager missing
+2025-08-04 18:06:15,831 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-08-04 18:06:15,837 [INFO] \U0001f9e0 CPU: 14.6%, Memory: 84.9%
+2025-08-04 18:13:07,978 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:13:09,935 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:13:09,935 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:13:12,471 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:13:24,164 [INFO] Sniper engine initialized.
+2025-08-04 18:13:24,190 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:13:26,043 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:13:26,047 [ERROR] \u274c intel_listener.TelegramListener missing
+2025-08-04 18:13:26,167 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 18:13:26,178 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-08-04 18:13:26,260 [INFO] \U0001f9e0 CPU: 13.9%, Memory: 86.5%
+2025-08-04 18:17:23,698 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:17:27,863 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:17:27,864 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:17:52,404 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:18:13,880 [INFO] Sniper engine initialized.
+2025-08-04 18:18:13,896 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:18:15,150 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:18:15,182 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 18:18:15,228 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 18:18:15,232 [ERROR] \u274c intel_engine.HeartbeatMonitor missing
+2025-08-04 18:18:15,248 [INFO] \U0001f9e0 CPU: 10.7%, Memory: 87.3%
+2025-08-04 18:20:19,332 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:20:20,435 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:20:20,436 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:20:21,205 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:20:24,212 [INFO] Sniper engine initialized.
+2025-08-04 18:20:24,213 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:20:24,649 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:20:24,655 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 18:20:24,658 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 18:20:24,665 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-04 18:20:24,674 [INFO] \U0001f9e0 CPU: 20.7%, Memory: 87.7%
+2025-08-04 18:33:43,650 [INFO] \u2705 strategy.trade_decision_engine.should_buy exists
+2025-08-04 18:33:44,639 [INFO] \u2705 utils.sol_price_feed.fetch_sol_usd_price exists
+2025-08-04 18:33:44,639 [INFO] \u2705 utils.telegram_alert.send_trade_alert exists
+2025-08-04 18:33:45,457 [INFO] \u2705 modules.solana_executor.buy_token_solana exists
+2025-08-04 18:33:48,431 [INFO] Sniper engine initialized.
+2025-08-04 18:33:48,431 [INFO] \u2705 modules.sniper_engine.scan_and_snipe exists
+2025-08-04 18:33:48,863 [INFO] \u2705 scanner.twitter_tracker.track_keywords exists
+2025-08-04 18:33:48,865 [INFO] \u2705 intel_listener.TelegramListener exists
+2025-08-04 18:33:48,868 [INFO] \u2705 intel_patrol.PatrolManager exists
+2025-08-04 18:33:48,869 [INFO] \u2705 intel_engine.HeartbeatMonitor exists
+2025-08-04 18:33:48,874 [INFO] \U0001f9e0 CPU: 28.8%, Memory: 84.6%

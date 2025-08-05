@@ -1,0 +1,55 @@
+# Refactored Project Directory Structure Proposal
+
+project_root/
+├── alerts/
+├── cli/
+│   └── engine_cli.py               # CLI commands: start/stop/status logic
+├── config/
+├── core/
+│   ├── __init__.py
+│   ├── base_bot.py                 # Base class for bots
+│   ├── logger.py                  # Shared logger setup
+│   └── threading_helper.py       # Thread/signal management helpers
+├── dashboard/
+├── data/
+│   ├── tracked_groups.txt
+│   ├── pl_simulated_results.json
+│   └── simulated_tokens.json
+├── jobs/
+├── listeners/
+├── logs/
+│   ├── intel_engine.log
+│   ├── terminal_log.txt
+│   └── purge_log.txt
+├── modules/
+├── omodashboard/
+├── predictor/
+├── scanner/
+├── scheduler/
+├── scripts/                       # New folder for shell/Python utilities
+│   ├── start.sh
+│   ├── shutdown.sh
+│   ├── backup_project.sh
+│   └── clean_unused_modules.sh
+├── strategy/
+├── tools/
+├── triggers/
+├── tests/                         # NEW: Python unit tests live here
+│   ├── test_engine.py
+│   └── test_health_check.py
+├── utils/
+├── .env
+├── .env.example                   # Add a template for .env
+├── .gitignore
+├── LICENSE                        # Add license (MIT/Apache/etc.)
+├── README.md
+├── README_projects.md             # Optional additional doc
+├── requirements.txt
+├── setup.py or pyproject.toml     # Finalize as build config
+├── launcher.py
+├── main.py                        # Could invoke cli/engine_cli.py
+├── intel_engine.py                # Can be split into core/ and cli/
+├── intel_patrol.py
+├── health_check.py
+├── mint_watcher.py
+└── omo_bot.py

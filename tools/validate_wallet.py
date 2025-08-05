@@ -4,8 +4,24 @@ import logging
 
 from eth_account import Account
 from dotenv import load_dotenv
+from utils.wallet_mapper import get_safe_evm_wallet
 
 load_dotenv()
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# Auto-inject EVM wallet if missing
+if not os.getenv("EVM_WALLET_ADDRESS"):
+    try:
+        # Use Phantom's known derivation logic or fetch from wallet connector
+        # For now, simulate with fallback mapping
+        sol_address = os.getenv("WALLET_ADDRESS")
+        evm_address = get_safe_evm_wallet(sol_address)
+        os.environ["EVM_WALLET_ADDRESS"] = evm_address
+        print(f"🔐 EVM wallet injected from Phantom: {evm_address}")
+    except Exception as e:
+        print(f"⚠️ Failed to inject EVM wallet: {e}")
 
 def validate():
     pk = os.getenv("PRIVATE_KEY")
