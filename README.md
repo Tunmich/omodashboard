@@ -1,4 +1,4 @@
-# 🧠 Meme Token Sniper Bot
+# Omodashboard
 
 A fully automated, multi-chain meme token scanner and sniper bot with trading, dashboard, Telegram alerts, ROI predictions, and wallet intelligence — designed for budget-conscious traders starting with just $10.
 
@@ -29,3 +29,7 @@ cd meme-token-radar
 ### Generate mock tokens:
 ```bash
 python tools/token_mock_cli.py --count 20 --output simulated_tokens.json
+
+# omodashboard
+Trading Dashboard
+c3a5c8353245139a0c519ae2cbfc429ffceac1c8
